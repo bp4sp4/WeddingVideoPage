@@ -19967,7 +19967,7 @@ iframe {
 }
 
 .card {
-  border: none;
+  border: 1;
 }
 
 .card.service-card:before {

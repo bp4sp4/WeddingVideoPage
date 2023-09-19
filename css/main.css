@@ -93,3 +93,6 @@
   font-family: "Noto Sans KR", sans-serif;
   text-align: right;
 }
+.swiper-slide {
+  margin-left: 5px;
+}
