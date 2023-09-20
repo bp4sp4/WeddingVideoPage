@@ -1,422 +1,454 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <title>Boto | Photography HTML Template</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Boto Photo Studio HTML Template" />
-    <meta name="keywords" content="iframe, html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Stylesheets -->
-    
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/slicknav.min.css" />
-    <link rel="stylesheet" href="css/fresco.css" />
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/theme.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;700&family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+
+<head>
+  <title>Boto | Photography HTML Template</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Boto Photo Studio HTML Template" />
+  <meta name="keywords" content="iframe, html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheets -->
+
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/slicknav.min.css" />
+  <link rel="stylesheet" href="css/fresco.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;700&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;700&family=Roboto:wght@100;900&display=swap"
+    rel="stylesheet">
 
 
-    <!-- Main Stylesheets -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!--[if lt IE 9]>
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400&family=Roboto:wght@100&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400&family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 
-  </head>
+</head>
 
-  <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-      <div class="loader"></div>
-    </div>
+<body>
+  <!-- Page Preloder -->
+  <div id="preloder">
+    <div class="loader"></div>
+  </div>
 
-    <!-- Header Section -->
-    <header class="header" id="header">
-      <div class="container-fluid">
-        <div class="row">
-          
-          <div class="col-sm-4 col-md-3 order-2 order-sm-1">
-            <div class="header__social">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </div>
-          </div>
-          <div class="col-sm-4 col-md-6 order-1 order-md-2 text-center">
-            <h3 class="main-logo"><span style="color: #ff72a1; ;">웨딩</span>러리</h3>
-          </div>
-          <div class="col-sm-4 col-md-3 order-3 order-sm-3">
-            <div class="header__switches">
-              <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
-              <a href="#" id="header_style">로그인</a>
-              
-            </div>
+  <!-- Header Section -->
+  <header class="header" id="header">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-4 col-md-3 order-2 order-sm-1">
+          <div class="header__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
-        <nav class="main__menu">
-          <ul class="nav__menu" style="padding-bottom: 20px;">
-            <li><a href="./index.html" class="menu--active">홈</a></li>
-            <li><a href="./about.html">공지사항</a></li>
-            <li><a href="./video.html">비디오</a></li>
-            <li><a href="./gallery.html">갤러리</a></li>
-            <li><a href="./blog.html">후기</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="col-sm-4 col-md-6 order-1 order-md-2 text-center">
+          <h3 class="main-logo"><span style="color: #ff72a1; ;">웨딩</span>러리</h3>
+        </div>
+        <div class="col-sm-4 col-md-3 order-3 order-sm-3">
+          <div class="header__switches">
+            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+            <a href="#" id="header_style">로그인</a>
+
+          </div>
+        </div>
       </div>
-    </header>
-   
-    <!-- 카테코리-->
-    <section class="pt-12" id="destination">
-      <div class="container">
-        <div class="main-show">
-          <video></video>
+      <nav class="main__menu">
+        <ul class="nav__menu" style="padding-bottom: 20px;">
+          <li><a href="./index.html">홈</a></li>
+          <li><a href=" ./about.html">공지사항</a></li>
+          <li><a href="./video.html">비디오</a></li>
+          <li><a href="./gallery.html">갤러리</a></li>
+          <li><a href="./blog.html">후기</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 카테코리-->
+  <section class="pt-12" id="destination">
+    <div class="container">
+      <div class="main-show">
+        <video></video>
         <Strong class="main-show-strong">웨딩러리에 오신걸 환영합니다!</Strong>
         <p class="main-show-p">Wedding</span>Lery</p>
         <p class="sub"></p>
       </div>
     </div>
+    </div>
+    </div>
+  </section>
+  <section class="pt-12" id="destination">
+    <div class="container">
+
+      <div class="mb-4 text-left">
+        <h3 class="main-title">오늘의&nbsp;<span class="main-choice">추천</span>픽!</h3>
+        <p class="sub-title">오늘의 추천픽 or N대(의)을 통해 스튜디오, 드레스,메이크업을 결정해보세요!</p>
       </div>
-      </div>
-    </section>
-    <section class="pt-12" id="destination">
-      <div class="container">
-        
-        <div class="mb-4 text-left">
-          <h3 class="main-title">N대의&nbsp;<span class="main-choice">추천</span>픽!</h3>
-          <h3 class="main-title">오늘의&nbsp;<span class="main-choice">추천</span>픽!</h3>  
-          <p class="sub-title">오늘의 추천픽 or N대(의)을 통해 스튜디오, 드레스,메이크업을 결정해보세요!</p>
-        </div>
-        <div class="row">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-             
-              <div class="swiper-slide" style="display: flex;">
-                <div>
-                  <div class="card overflow-hidden" >
-                    <div class="timer-wrap"></div>
-                    <span id="timer">03:00:00</span>
-                    <span id="timer-text">3시간마다 오늘의 추천픽이 교체됩니다!</span>
-                  
-                    <img
-                      class="card-img-top"
-                      src="img/dest/studio_example.jpg"
-                      alt="Rome, Italty"
-                    />
-                    <div class="card-body py-4 px-3">
-                      <div
-                        class="d-flex flex-column flex-lg-row justify-content-between mb-3"
-                      >
-                        <h4 class="text-secondary fw-medium">
-                          스튜디오
-                        </h4>
-                        <span class="fs-1 fw-medium">$5,42k</span>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <img
-                          src="img/dest/navigation.svg"
-                          style="margin-right: 14px"
-                          width="20"
-                          alt="navigation"
-                        /><span class="fs-0 fw-medium">10 Days Trip</span>
-                      </div>
+      <div class="row">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide" style="display: flex;">
+              <div>
+                <div class="card overflow-hidden">
+                  <div class="timer-wrap"></div>
+                  <span id="timer">03:00:00</span>
+                  <span id="timer-text">3시간마다 오늘의 추천픽이 교체됩니다!</span>
+
+                  <img class="card-img-top" src="img/dest/studio_example.jpg" alt="Rome, Italty" />
+                  <div class="card-body py-4 px-3">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                      <h4 class="text-secondary fw-medium">
+                        스튜디오
+                      </h4>
+                      <span class="fs-1 fw-medium">$5,42k</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
+                        class="fs-0 fw-medium">10 Days Trip</span>
                     </div>
                   </div>
                 </div>
               </div>
-                  
-              <div class="swiper-slide" style="display: flex;">
-                <div>
-                  <div class="card overflow-hidden" >
-                    <div class="timer-wrap"></div>
-                    <span id="timer2">02:00:00</span>
-                    <span id="timer-text">3시간마다 오늘의 추천픽이 교체됩니다!</span>
-                  
-                    <img
-                      class="card-img-top"
-                      src="img/dest/dress_example.avif"
-                      alt="Rome, Italty"
-                    />
-                    <div class="card-body py-4 px-3">
-                      <div
-                        class="d-flex flex-column flex-lg-row justify-content-between mb-3"
-                      >
-                        <h4 class="text-secondary fw-medium">
-                          스튜디오
-                        </h4>
-                        <span class="fs-1 fw-medium">$5,42k</span>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <img
-                          src="img/dest/navigation.svg"
-                          style="margin-right: 14px"
-                          width="20"
-                          alt="navigation"
-                        /><span class="fs-0 fw-medium">10 Days Trip</span>
-                      </div>
+            </div>
+
+            <div class="swiper-slide" style="display: flex;">
+              <div>
+                <div class="card overflow-hidden">
+                  <div class="timer-wrap"></div>
+                  <span id="timer2">02:00:00</span>
+                  <span id="timer-text">3시간마다 오늘의 추천픽이 교체됩니다!</span>
+
+                  <img class="card-img-top" src="img/dest/dress_example.avif" alt="Rome, Italty" />
+                  <div class="card-body py-4 px-3">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                      <h4 class="text-secondary fw-medium">
+                        드레스
+                      </h4>
+                      <span class="fs-1 fw-medium">$5,42k</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
+                        class="fs-0 fw-medium">10 Days Trip</span>
                     </div>
                   </div>
                 </div>
               </div>
-              
-                  
-              <div class="swiper-slide" style="display: flex;">
-                <div>
-                  <div class="card overflow-hidden" >
-                    <div class="timer-wrap"></div>
-                    <span id="timer3">03:00:00</span>
-                    <span id="timer-text">3시간마다 오늘의 추천픽이 교체됩니다!</span>
-                  
-                    <img
-                      class="card-img-top"
-                      src="img/dest/makeup_example.jpg"
-                      alt="Rome, Italty"
-                    />
-                    <div class="card-body py-4 px-3">
-                      <div
-                        class="d-flex flex-column flex-lg-row justify-content-between mb-3"
-                      >
-                        <h4 class="text-secondary fw-medium">
-                          스튜디오
-                        </h4>
-                        <span class="fs-1 fw-medium">$5,42k</span>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <img
-                          src="img/dest/navigation.svg"
-                          style="margin-right: 14px"
-                          width="20"
-                          alt="navigation"
-                        /><span class="fs-0 fw-medium">10 Days Trip</span>
-                      </div>
+            </div>
+
+
+            <div class="swiper-slide" style="display: flex;">
+              <div>
+                <div class="card overflow-hidden">
+                  <div class="timer-wrap"></div>
+                  <span id="timer3">03:00:00</span>
+                  <span id="timer-text">3시간마다 오늘의 추천픽이 교체됩니다!</span>
+
+                  <img class="card-img-top" src="img/dest/makeup_example.jpg" alt="Rome, Italty" />
+                  <div class="card-body py-4 px-3">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                      <h4 class="text-secondary fw-medium">
+                        메이크업
+                      </h4>
+                      <span class="fs-1 fw-medium">$5,42k</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
+                        class="fs-0 fw-medium">10 Days Trip</span>
                     </div>
                   </div>
                 </div>
               </div>
-              
-                  
-              <div class="swiper-slide" style="display: flex;">
-                <div>
-                  <div class="card overflow-hidden" >
-                    
-                    <img
-                      class="card-img-top"
-                      src="img/dest/studio_example.jpg"
-                      alt="Rome, Italty"
-                    />
-                    <div class="card-body py-4 px-3">
-                      <div
-                        class="d-flex flex-column flex-lg-row justify-content-between mb-3"
-                      >
-                        <h4 class="text-secondary fw-medium">
-                          스튜디오
-                        </h4>
-                        <span class="fs-1 fw-medium">$5,42k</span>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <img
-                          src="img/dest/navigation.svg"
-                          style="margin-right: 14px"
-                          width="20"
-                          alt="navigation"
-                        /><span class="fs-0 fw-medium">10 Days Trip</span>
-                      </div>
+            </div>
+
+
+            <div class="swiper-slide" style="display: flex;">
+              <div>
+                <div class="card overflow-hidden">
+
+                  <img class="card-img-top" src="img/dest/studio_example.jpg" alt="Rome, Italty" />
+                  <div class="card-body py-4 px-3">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                      <h4 class="text-secondary fw-medium">
+                        스튜디오
+                      </h4>
+                      <span class="fs-1 fw-medium">$5,42k</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
+                        class="fs-0 fw-medium">10 Days Trip</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide" style="display: flex;">
-                <div>
-                  <div class="card overflow-hidden" >
-                    
-                    <img
-                      class="card-img-top"
-                      src="img/dest/studio_example.jpg"
-                      alt="Rome, Italty"
-                    />
-                    <div class="card-body py-4 px-3">
-                      <div
-                        class="d-flex flex-column flex-lg-row justify-content-between mb-3"
-                      >
-                        <h4 class="text-secondary fw-medium">
-                          스튜디오
-                        </h4>
-                        <span class="fs-1 fw-medium">$5,42k</span>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <img
-                          src="img/dest/navigation.svg"
-                          style="margin-right: 14px"
-                          width="20"
-                          alt="navigation"
-                        /><span class="fs-0 fw-medium">10 Days Trip</span>
-                      </div>
+            </div>
+            <div class="swiper-slide" style="display: flex;">
+              <div>
+                <div class="card overflow-hidden">
+
+                  <img class="card-img-top" src="img/dest/smallwedding.jpeg" alt="Rome, Italty" />
+                  <div class="card-body py-4 px-3">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                      <h4 class="text-secondary fw-medium">
+                        스몰웨딩
+                      </h4>
+                      <span class="fs-1 fw-medium">$5,42k</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
+                        class="fs-0 fw-medium">10 Days Trip</span>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
 
           </div>
           <div style="margin-bottom: 30px;"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+
           <div class="swiper-pagination" id="swperpa"></div>
         </div>
-        
+
       </div>
-      
+
       <!-- end of .container-->
-    </section>
- <!-- 카테코리-->
- <section class="pt-5" id="destination">
-  <div class="container">
-    <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
-    </div>
-    <div class="mb-4 text-left">
-      <h3 class="main-title">지역별&nbsp;<span class="main-choice">추천</span>픽!</h3>  
-      <p class="sub-title">카테고리별 맞춤웨딩홀 찾아보세요!</p>
-    </div>
-    <div class="row">
-        <div class="col-md-2 mb-4" id="category-choice">
-        <div class="card overflow-hidden shadow">
-          <div class="card-body py-4 px-3 text-center">
-         서울
-          </div>
-        </div>
-      
-      </div>
-      <div class="col-md-2 mb-4" id="category-choice">
-        <div class="card overflow-hidden shadow">
-          <div class="card-body py-4 px-3 text-center">
-         경기
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 mb-4" id="category-choice">
-        <div class="card overflow-hidden shadow">
-          <div class="card-body py-4 px-3 text-center" >
-         부산
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 mb-4" id="category-choice">
-        <div class="card overflow-hidden shadow">
-          <div class="card-body py-4 px-3 text-center">
-         제주도
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 mb-4" id="category-choice">
-        <div class="card overflow-hidden shadow">
-          <div class="card-body py-4 px-3 text-center">
-         대전
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 mb-4" id="category-choice">
-        <div class="card overflow-hidden shadow">
-          <div class="card-body py-4 px-3 text-center">
-         용인
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-  
-  <!-- end of .container-->
-</section>
+  </section>
 
-    <!-- Hero Section end -->
+  <section class="pt-5" id="destination">
+    <div class="container">
+      <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
+      </div>
+      <div class="mb-4 text-left">
+        <h3 class="main-title">지역별&nbsp;<span class="main-choice">추천</span>픽!</h3>
+        <p class="sub-title">카테고리별 맞춤웨딩홀 찾아보세요!</p>
+      </div>
+      <div class="row">
+        <div class="col-md-2 mb-4 category-choice active" data-target="seoul-tab">
+          <div class="choice-select">
+            <div class="py-4 px-3 text-center">
+              서울
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4 category-choice" data-target="gyeonggi-tab">
+          <div class="choice-select">
+            <div class="py-4 px-3 text-center">
+              경기
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4 category-choice" data-target="busan-tab">
+          <div class="choice-select ">
+            <div class="py-4 px-3 text-center">
+              부산
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4 category-choice" data-target="jeju-tab">
+          <div class="choice-select">
+            <div class="py-4 px-3 text-center">
+              제주
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4 category-choice" data-target="bupenog-tab">
+          <div class="choice-select">
+            <div class="py-4 px-3 text-center">
+              부평
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4 category-choice" data-target="youngin-tab">
+          <div class="choice-select">
+            <div class="py-4 px-3 text-center">
+              용인
+            </div>
+          </div>
+        </div>
+        <!-- 탭 내용 -->
+        <div class="tab-content">
+          <div id="seoul-tab" class="tab-pane">
+            <ul class="item-list">
+              <li class="company-list">
+                <a href="">
+                  <img class="company-img" src="./img/dest/weddingholl.jpeg" alt="벨라비타">
+                  <div class="company-info">
+                    <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
+                    <span class="company-location">서울 강남구</span>
 
-    <!-- Footer Section
+                  </div>
+                </a>
+              </li>
+              <li class="company-list">
+                <a href="">
+                  <img class="company-img" src="./img/dest/weddingholl2.jpeg" alt="벨라비타">
+                  <div class="company-info">
+                    <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
+                    <span class="company-location">서울 강남구</span>
+
+                  </div>
+                </a>
+              </li>
+              <li class="company-list">
+                <a href="">
+                  <img class="company-img" src="./img/dest/weddingholl3.jpeg" alt="벨라비타">
+                  <div class="company-info">
+                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
+                    <span class="company-location">서울 강남구</span>
+
+                  </div>
+                </a>
+              </li>
+              <li class="company-list">
+                <a href="">
+                  <img class="company-img" src="./img/dest/weddingholl4.jpeg" alt="벨라비타">
+                  <div class="company-info">
+                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
+                    <span class="company-location">서울 강남구</span>
+
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="gyeonggi-tab" class="tab-pane">
+            <ul class="item-list">
+              <li class="company-list">
+                <a href="">
+                  <img class="company-img" src="./img/dest/smallwedding.jpeg" alt="벨라비타">
+                  <div class="company-info">
+                    <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
+                    <span class="company-location">서울 강남구</span>
+
+                  </div>
+                </a>
+              </li>
+              <li class="company-list">
+                <a href="">
+                  <img class="company-img" src="./img/dest/smallwedding2.jpeg" alt="벨라비타">
+                  <div class="company-info">
+                    <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
+                    <span class="company-location">서울 강남구</span>
+
+                  </div>
+                </a>
+              </li>
+              <li class="company-list">
+                <a href="">
+                  <img class="company-img" src="./img/dest/smallwedding3.jpeg" alt="벨라비타">
+                  <div class="company-info">
+                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
+                    <span class="company-location">서울 강남구</span>
+
+                  </div>
+                </a>
+              </li>
+              <li class="company-list">
+                <a href="">
+                  <img class="company-img" src="./img/dest/smallwedding4.jpeg" alt="벨라비타">
+                  <div class="company-info">
+                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
+                    <span class="company-location">서울 강남구</span>
+
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div id="busan-tab" class="tab-pane">
+            <p>부산 내용</p>
+          </div>
+          <div id="jeju-tab" class="tab-pane">
+            <p>제주 내용</p>
+          </div>
+          <div id="bupenog-tab" class="tab-pane">
+            <p>부평 내용</p>
+          </div>
+          <div id="youngin-tab" class="tab-pane">
+            <p>용인 내용</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of .container-->
+  </section>
+
+
+  <!-- Hero Section end -->
+
+  <!-- Footer Section
     <footer class="footer__section">
       <div class="container">
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        <div class="footer__copyright__text">
-          <p>
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | This template is made with
-            <i class="fa fa-heart" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-          </p>
-        </div>
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      </div>
-    </footer>
-    <!-- Footer Section end -->
+  <div class="footer__copyright__text">
+    <p>
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      All rights reserved | This template is made with
+      <i class="fa fa-heart" aria-hidden="true"></i> by
+      <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    </p>
+  </div>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  </div>
+  </footer>
+  <!-- Footer Section end -->
 
-    <!-- Search Begin -->
-    <div class="search-model">
-      <div class="h-100 d-flex align-items-center justify-content-center">
-        <div class="search-close-switch">+</div>
-        <form class="search-model-form">
-          <input type="text" id="search-input" placeholder="Search here....." />
-        </form>
-      </div>
+  <!-- Search Begin -->
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+      <div class="search-close-switch">+</div>
+      <form class="search-model-form">
+        <input type="text" id="search-input" placeholder="Search here....." />
+      </form>
     </div>
-    <!-- Search End -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!--====== Javascripts & Jquery ======-->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true, 
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
-    
-    
-    <script src="js/vendor/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap CSS -->
-    
-    <script src="js/headercolor.js"></script>
-    <script src="js/timer.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/fresco.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+  <!-- Search End -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!--====== Javascripts & Jquery ======-->
+
+  <script src="js/vendor/jquery-3.2.1.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <!-- Bootstrap CSS -->
+  <script src="js/tapmenu.js"></script>
+  <script src="js/headercolor.js"></script>
+  <script src="js/timer.js"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/fresco.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

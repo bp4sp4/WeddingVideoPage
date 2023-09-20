@@ -54,6 +54,7 @@
   font-size: 30px;
   text-align: center;
   top: 200px;
+  font-weight: 500;
 }
 #timer2 {
   position: absolute;
@@ -64,6 +65,7 @@
   font-size: 30px;
   text-align: center;
   top: 200px;
+  font-weight: 500;
 }
 #timer3 {
   position: absolute;
@@ -74,6 +76,7 @@
   font-size: 30px;
   text-align: center;
   top: 200px;
+  font-weight: 500;
 }
 #timer-text {
   position: absolute;
@@ -81,7 +84,8 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100%;
   color: #ff72a1;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 15px;
   text-align: center;
   top: 250px;
 }
@@ -95,4 +99,70 @@
 }
 .swiper-slide {
   margin-left: 5px;
+}
+/* 활성 탭 내용 스타일 */
+/* 활성 탭 내용 스타일 */
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+/* 선택된 탭의 배경색과 글자색 */
+.category-choice.active .choice-select {
+  background-color: #ff72a1;
+  color: #fff;
+  border-radius: 20px;
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 선택되지 않은 탭 내용 스타일 (비활성 탭) */
+.category-choice:not(.active) .choice-select {
+  color: #000000;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.item-list {
+  list-style: none;
+}
+.item-list .company-list {
+  float: left;
+  width: 33.33%;
+  margin-bottom: 32px;
+}
+
+.item-list .company-list > a {
+  display: block;
+  padding: 0px 16px 0px 0px;
+  line-height: 1;
+}
+
+.company-img {
+  width: 380px;
+  height: 280px;
+  background-size: cover;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+}
+.company-info {
+  overflow: hidden;
+}
+.company-info .company-name {
+  padding: 16px 0 4px;
+  line-height: 27px;
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.company-location {
+  color: #000000;
+  padding-bottom: 10px;
+  font-family: "Noto Sans KR", sans-serif;
 }
