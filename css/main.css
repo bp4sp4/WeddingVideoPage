@@ -2,6 +2,41 @@
   text-decoration: none;
 }
 
+.animated-title {
+  color: #adacac;
+  font-size: 140px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  opacity: 20%;
+  padding: 290px 0;
+  margin-top: -730px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.animated-title .track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 60s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (hover: hover) and (min-width: 700px) {
+  .animated-title .content {
+    -webkit-transform: translateY(calc(100% - 8rem));
+    transform: translateY(calc(100% - 8rem));
+  }
+}
 .main-logo {
   font-size: 50px;
   font-weight: 300;
@@ -14,10 +49,10 @@
   align-items: center;
 }
 .main-show .main-show-strong {
-  font-size: 20px;
+  font-size: 35px;
   color: black;
   opacity: 1;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .video-thrid {
   display: block;
@@ -40,7 +75,7 @@
 }
 
 .main-show .main-show-p {
-  font-size: 100px;
+  font-size: 140px;
   line-height: 1;
   color: black;
   font-weight: 900;
