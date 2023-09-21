@@ -42,6 +42,38 @@
   font-weight: 300;
   font-family: "Black Han Sans", sans-serif;
 }
+.scroll-down {
+  position: absolute;
+  left: 0;
+  top: 610px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  transform: scaleY(-1);
+  transition: 0.3s;
+  z-index: 8;
+}
+.scroll-down img {
+  position: relative;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 1.5s infinite;
+  height: 30px;
+  width: 30px;
+  line-height: 60px;
+
+  display: inline-block;
+
+  font-size: 12px;
+}
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+  }
+}
 .main-show {
   display: flex;
   flex-direction: column;
