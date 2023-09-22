@@ -52,29 +52,6 @@
   transition: 0.3s;
   z-index: 8;
 }
-.scroll-down .scroll-trans {
-  transform: scaleY(-1);
-}
-.scroll-down svg {
-  position: relative;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 1.5s infinite;
-  height: 30px;
-  width: 30px;
-  line-height: 60px;
-  display: inline-block;
-  font-size: 12px;
-}
-@-webkit-keyframes bounce {
-  0%,
-  100% {
-    -webkit-transform: translateY(0);
-  }
-  50% {
-    -webkit-transform: translateY(-10px);
-  }
-}
-
 .main-show {
   display: flex;
   flex-direction: column;

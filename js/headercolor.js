@@ -1,4 +1,4 @@
-const header = document.querySelector("#header");
+const header = document.querySelector("#nav-display");
 const headerHeight = header.getBoundingClientRect().height;
 
 window.addEventListener("scroll", () => {
