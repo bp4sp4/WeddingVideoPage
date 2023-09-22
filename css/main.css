@@ -11,8 +11,8 @@
   width: 100%;
   max-width: 100%;
   height: auto;
-  opacity: 20%;
-  padding: 290px 0;
+  opacity: 0.2;
+  padding: 300px 0;
   margin-top: -730px;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -49,9 +49,11 @@
   width: 100%;
   text-align: center;
   color: #000000;
-  transform: scaleY(-1);
   transition: 0.3s;
   z-index: 8;
+}
+.scroll-down .scroll-trans {
+  transform: scaleY(-1);
 }
 .scroll-down svg {
   position: relative;
@@ -60,9 +62,7 @@
   height: 30px;
   width: 30px;
   line-height: 60px;
-
   display: inline-block;
-
   font-size: 12px;
 }
 @-webkit-keyframes bounce {
@@ -74,6 +74,7 @@
     -webkit-transform: translateY(-10px);
   }
 }
+
 .main-show {
   display: flex;
   flex-direction: column;
@@ -86,22 +87,33 @@
   opacity: 1;
   font-family: "Roboto", sans-serif;
 }
+
+.main-show .main-show-strong .sub-show {
+  font-weight: bold;
+  font-size: 40px;
+  opacity: 1;
+  color: #f56464;
+}
+
 .video-thrid {
-  display: block;
+  display: flex;
 }
 .video-thrid .video-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 .video-thrid .video-select .video-list {
   float: left;
-  text-align: center;
+
   width: 33.33%;
 }
 .video-thrid .video-select .video-list iframe {
   width: 380px;
   height: 280px;
 }
-.video-hashtag {
+.video-thrid .video-select .video-list > span {
   color: #6cb1f1;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -121,7 +133,7 @@
 
 .main-show .main-show-p {
   font-size: 140px;
-  line-height: 1;
+
   color: black;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
