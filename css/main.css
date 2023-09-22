@@ -48,12 +48,12 @@
   top: 610px;
   width: 100%;
   text-align: center;
-  color: #fff;
+  color: #000000;
   transform: scaleY(-1);
   transition: 0.3s;
   z-index: 8;
 }
-.scroll-down img {
+.scroll-down svg {
   position: relative;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 1.5s infinite;
@@ -104,6 +104,19 @@
 .video-hashtag {
   color: #6cb1f1;
   font-family: "Noto Sans KR", sans-serif;
+}
+.choice-all {
+  position: absolute;
+  top: 2px;
+  right: 15px;
+  cursor: pointer;
+}
+.choice-all > a {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(38, 38, 38);
 }
 
 .main-show .main-show-p {
@@ -198,24 +211,40 @@
   display: block;
 }
 
+.category-wrap {
+  display: flex;
+  padding: 12px 0px 30px 0px;
+}
+.choice-select {
+  margin: 0px 16px;
+}
+
 /* 선택된 탭의 배경색과 글자색 */
 .category-choice.active .choice-select {
+  width: 165px;
+  height: 50px;
   background-color: #ff72a1;
   color: #fff;
-  border-radius: 20px;
+  border: 1px solid #ff3377;
+  border-radius: 10px;
   opacity: 1;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
+  line-height: 47px;
   font-family: "Noto Sans KR", sans-serif;
 }
 
 /* 선택되지 않은 탭 내용 스타일 (비활성 탭) */
 .category-choice:not(.active) .choice-select {
+  width: 165px;
+  height: 50px;
   color: #000000;
   background-color: #ebebeb;
-  border-radius: 20px;
-  font-size: 15px;
+  border: 1px solid #a1a0a0;
+  border-radius: 10px;
+  font-size: 17px;
   font-weight: 500;
+  line-height: 47px;
   font-family: "Noto Sans KR", sans-serif;
 }
 .item-list {

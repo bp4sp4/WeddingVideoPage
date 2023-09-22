@@ -94,7 +94,7 @@
   </header>
 
   <!-- 오늘의 영상픽 -->
-  <section class="pt-12" id="destination" style="margin-bottom: 100px;">
+  <section class="pt-12" id="destination" style="margin-bottom: 120px;">
     <div class="container">
       <div class="main-show">
         <video></video>
@@ -108,7 +108,11 @@
           </div>
         </div>
         <div class="scroll-down">
-          <img src="img/finger.png" alt="손가락아래">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mouse"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z" />
+          </svg>
         </div>
       </div>
     </div>
@@ -119,8 +123,18 @@
     <div class="container">
 
       <div class="mb-4 text-left">
+        <div class="container"></div>
         <h3 class="main-title">오늘의&nbsp;<span class="main-choice">영상</span>픽!</h3>
         <p class="sub-title">오늘의 영상픽을 통해 생생한 현장감을 통해 확인해 보세요!</p>
+      </div>
+      <div class="choice-all"><a href="#">
+          <span>전체보기</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+          </svg>
+        </a>
       </div>
       <div class="row">
         <div class="video-thrid">
@@ -165,6 +179,15 @@
       <div class="mb-4 text-left">
         <h3 class="main-title">오늘의&nbsp;<span class="main-choice">추천</span>픽!</h3>
         <p class="sub-title">오늘의 추천픽을 통해 스튜디오, 드레스,메이크업을 결정해보세요!</p>
+      </div>
+      <div class="choice-all"><a href="#">
+          <span>전체보기</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+          </svg>
+        </a>
       </div>
       <div class="row">
         <div class="swiper mySwiper">
@@ -300,50 +323,61 @@
     <div class="container">
       <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
       </div>
-      <div class="mb-4 text-left">
+      <div class="mb-2 text-left">
         <h3 class="main-title">오늘의 지역별&nbsp;<span class="main-choice">추천</span>픽!</h3>
         <p class="sub-title">카테고리별 맞춤웨딩홀 찾아보세요!</p>
       </div>
+      <div class="choice-all"><a href="#">
+          <span>전체보기</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+          </svg>
+        </a>
+      </div>
       <div class="row">
-        <div class="col-md-2 mb-4 category-choice active" data-target="seoul-tab">
-          <div class="choice-select">
-            <div class="py-4 px-3 text-center">
-              서울
+        <div class="category-wrap">
+          <div class="category-choice active" data-target="seoul-tab">
+            <div class="choice-select">
+              <div class="text-center">
+                서울
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-2 mb-4 category-choice" data-target="gyeonggi-tab">
-          <div class="choice-select">
-            <div class="py-4 px-3 text-center">
-              경기
+          <div class="category-choice" data-target="gyeonggi-tab">
+            <div class="choice-select">
+              <div class="text-center">
+                경기
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-2 mb-4 category-choice" data-target="busan-tab">
-          <div class="choice-select ">
-            <div class="py-4 px-3 text-center">
-              부산
+          <div class="category-choice" data-target="busan-tab">
+            <div class="choice-select ">
+              <div class="text-center">
+                부산
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-2 mb-4 category-choice" data-target="jeju-tab">
-          <div class="choice-select">
-            <div class="py-4 px-3 text-center">
-              제주
+          <div class="category-choice" data-target="jeju-tab">
+            <div class="choice-select">
+              <div class="text-center">
+                제주
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-2 mb-4 category-choice" data-target="bupenog-tab">
-          <div class="choice-select">
-            <div class="py-4 px-3 text-center">
-              부평
+          <div class="category-choice" data-target="bupenog-tab">
+            <div class="choice-select">
+              <div class=" text-center">
+                부평
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-2 mb-4 category-choice" data-target="youngin-tab">
-          <div class="choice-select">
-            <div class="py-4 px-3 text-center">
-              용인
+          <div class="category-choice" data-target="youngin-tab">
+            <div class="choice-select">
+              <div class="text-center">
+                용인
+              </div>
             </div>
           </div>
         </div>
@@ -468,9 +502,7 @@
       <script>
         document.write(new Date().getFullYear());
       </script>
-      All rights reserved | This template is made with
-      <i class="fa fa-heart" aria-hidden="true"></i> by
-      <a href="https://colorlib.com" target="_blank">Colorlib</a>
+      WeddingLery All rights reserved
     </p>
   </div>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

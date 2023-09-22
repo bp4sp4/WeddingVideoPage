@@ -75,12 +75,6 @@ h6 {
   font-size: 16px;
 }
 
-p {
-  font-size: 16px;
-  color: #7e858b;
-  line-height: 1.8;
-}
-
 img {
   max-width: 100%;
 }
@@ -416,7 +410,7 @@ ol {
 .main__menu {
   position: relative;
   right: 0;
-  padding-top: 25px;
+
   text-align: center;
 }
 
