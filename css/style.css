@@ -450,14 +450,15 @@ ol {
   position: absolute;
   content: "";
   width: 0;
-  height: 6px;
+  height: 13px;
   left: 0;
   bottom: 8px;
-  background: #8db952;
+  background: #fbe09b;
   z-index: -1;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .main__menu .nav__menu > li > a.menu--active {
