@@ -1,88 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Swiper demo</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
 
-    <!-- Demo styles -->
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
+  <!-- Demo styles -->
+  <style>
+    /* 슬라이드 */
+    .slider {
+      overflow: hidden;
+      position: relative;
+      max-width: 1180px;
+      margin: 50px auto 0;
+    }
 
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
+    .slider .inner {
+      overflow: hidden;
+      margin: 0 50px;
+    }
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    .slider .list>li {
+      width: 20%;
+      height: 150px;
+      background: #8ab4f8;
+      font-size: 20px;
+      line-height: 150px;
+      text-align: center;
+    }
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
-  </head>
+    /* 페이징 */
+    .paging_wrap {
+      margin-top: 10px;
+      font-size: 0;
+      text-align: center;
+    }
 
-  <body>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-      </div>
-      <div class="swiper-pagination"></div>
+    .paging_wrap .num {
+      overflow: hidden;
+      display: inline-block;
+      width: 140px;
+      margin: 0 5px;
+    }
+
+    .paging_wrap .page_btn {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin: 0 2px;
+      border: 1px solid #eee;
+      font-size: 11px;
+      line-height: 22px;
+      text-align: center;
+      vertical-align: top;
+      cursor: pointer;
+    }
+
+    .paging_wrap .page_btn:hover {
+      border-color: #8ab4f8;
+      color: #8ab4f8;
+    }
+
+    .paging_list {
+      display: flex;
+    }
+
+    .paging_list>li {
+      width: 24px;
+      height: 24px;
+      margin: 0 2px;
+      background: none;
+      border: 1px solid #eee;
+      border-radius: 0;
+      font-size: 13px;
+      line-height: 22px;
+      flex-shrink: 0;
+      opacity: 1;
+    }
+
+    .paging_list>li.swiper-pagination-bullet-active {
+      border-color: #8ab4f8;
+      color: #8ab4f8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slider">
+    <!-- 슬라이드 -->
+    <div class="inner">
+      <ul class="swiper-wrapper list">
+        <li class="swiper-slide">slider1</li>
+        <li class="swiper-slide">slider2</li>
+        <li class="swiper-slide">slider3</li>
+        <li class="swiper-slide">slider4</li>
+        <li class="swiper-slide">slider5</li>
+        <li class="swiper-slide">slider6</li>
+        <li class="swiper-slide">slider7</li>
+        <li class="swiper-slide">slider8</li>
+        <li class="swiper-slide">slider9</li>
+        <li class="swiper-slide">slider10</li>
+        <li class="swiper-slide">slider11</li>
+        <li class="swiper-slide">slider12</li>
+        <li class="swiper-slide">slider13</li>
+        <li class="swiper-slide">slider14</li>
+        <li class="swiper-slide">slider15</li>
+      </ul>
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- 페이징 -->
+    <div class="paging_wrap">
+      <span class="page_btn paging_first">&lt;&lt;</span>
+      <span class="page_btn paging_prev">&lt;</span>
+      <div class="num">
+        <ul class="paging_list">
+        </ul>
+      </div>
+      <span class="page_btn paging_next">&gt;</span>
+      <span class="page_btn paging_last">&gt;&gt;</span>
+    </div>
+  </div>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
-  </body>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
 </html>

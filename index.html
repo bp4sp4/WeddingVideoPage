@@ -112,7 +112,7 @@
     </div>
   </section>
   <!--오늘의 영상픽 -->
-  <section class="pt-5" id="destination">
+  <section class="pt-12" id="destination" style="margin-bottom: 50px;">
     <div class="container">
       <div class="mb-4 text-left">
         <h3 class="main-title">오늘의&nbsp;<span class="main-choice">영상</span>픽!</h3>
@@ -128,15 +128,13 @@
         </a>
       </div>
       <div class="row">
-
-
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="video-third">
                 <div class="video-select">
                   <div class="video-list">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
+                    <iframe src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
@@ -149,7 +147,7 @@
               <div class="video-third">
                 <div class="video-select">
                   <div class="video-list">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
+                    <iframe src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
@@ -162,7 +160,7 @@
               <div class="video-third">
                 <div class="video-select">
                   <div class="video-list">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
+                    <iframe src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
@@ -175,7 +173,7 @@
               <div class="video-third">
                 <div class="video-select">
                   <div class="video-list">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
+                    <iframe src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
@@ -188,7 +186,7 @@
               <div class="video-third">
                 <div class="video-select">
                   <div class="video-list">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
+                    <iframe src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
@@ -198,6 +196,9 @@
               </div>
             </div>
           </div>
+          <div style="margin-bottom: 30px;"></div>
+
+          <div class="swiper-pagination" id="swperpa"></div>
         </div>
       </div>
     </div>
@@ -208,7 +209,7 @@
   <!-- 여기까지 영상픽 -->
 
   <!--오늘의 추천픽 -->
-  <section class="pt-5" id="destination">
+  <section class="pt-6" id="destination">
     <div class="container">
       <div class="mb-4 text-left">
         <h3 class="main-title">오늘의&nbsp;<span class="main-choice">추천</span>픽!</h3>
@@ -227,7 +228,7 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide" style="display: flex;">
-              <div>
+              <div class="zoom">
                 <div class="card overflow-hidden">
                   <div class="timer-wrap"></div>
                   <span id="timer">03:00:00</span>
@@ -248,7 +249,7 @@
               </div>
             </div>
             <div class="swiper-slide" style="display: flex;">
-              <div>
+              <div class="zoom">
                 <div class="card overflow-hidden">
                   <div class="timer-wrap"></div>
                   <span id="timer2">02:00:00</span>
@@ -269,7 +270,7 @@
               </div>
             </div>
             <div class="swiper-slide" style="display: flex;">
-              <div>
+              <div class="zoom">
                 <div class="card overflow-hidden">
                   <div class="timer-wrap"></div>
                   <span id="timer3">03:00:00</span>
@@ -290,7 +291,7 @@
               </div>
             </div>
             <div class="swiper-slide" style="display: flex;">
-              <div>
+              <div class="zoom">
                 <div class="card overflow-hidden">
                   <img class="card-img-top" src="img/dest/studio_example.jpg" alt="Rome, Italty" />
                   <div class="card-body py-4 px-3">
@@ -308,7 +309,7 @@
               </div>
             </div>
             <div class="swiper-slide" style="display: flex;">
-              <div>
+              <div class="zoom">
                 <div class="card overflow-hidden">
                   <img class="card-img-top" src="img/dest/smallwedding.jpeg" alt="Rome, Italty" />
                   <div class="card-body py-4 px-3">
@@ -316,7 +317,6 @@
                       <h4 class="text-secondary fw-medium">
                         스몰웨딩
                       </h4>
-
                     </div>
                     <div class="d-flex align-items-center">
                       <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
@@ -328,6 +328,7 @@
             </div>
           </div>
           <div style="margin-bottom: 30px;"></div>
+
           <div class="swiper-pagination" id="swperpa"></div>
         </div>
       </div>
@@ -536,9 +537,18 @@
     </div>
   </div>
   <!-- Search End -->
+  <script>
+    $('.swiper-slide').on('mouseover', function () {
+      swiper.autoplay.stop();
+    });
+    $('.swiper-slide').on('mouseout', function () {
+      swiper.autoplay.start();
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!--====== Javascripts & Jquery ======-->
 
+  <script src="js/swiperhoverstop.js"></script>
   <script src="js/vendor/jquery-3.2.1.min.js"></script>
   <script src="js/swiper.js"></script>
   <!-- Bootstrap CSS -->

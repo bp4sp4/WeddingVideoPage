@@ -1,13 +1,14 @@
+// Swiper 슬라이더 초기화
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
-  spaceBetween: 30,
+
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    type: "bullets",
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -15,12 +16,24 @@ var swiper = new Swiper(".mySwiper", {
   },
   breakpoints: {
     768: {
-      slidesPerView: 2, //브라우저가 768보다 클 때
+      slidesPerView: 2,
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 3, //브라우저가 1024보다 클 때
+      slidesPerView: 3,
       spaceBetween: 50,
     },
   },
+});
+
+$(".mySwiper").each(function (elem, target) {
+  var swp = target.swiper;
+  $(this).hover(
+    function () {
+      swp.autoplay.stop();
+    },
+    function () {
+      swp.autoplay.start();
+    }
+  );
 });
