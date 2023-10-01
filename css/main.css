@@ -123,7 +123,6 @@
   color: #ff72a1;
 }
 .sub-title {
-  color: rgb(131, 131, 131);
   font-size: 18px;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -134,6 +133,13 @@
   background-color: aliceblue;
   opacity: 80%;
   top: 190px;
+}
+.video-hashtag {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: -230px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 #timer {
   position: absolute;
