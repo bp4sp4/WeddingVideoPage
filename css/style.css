@@ -12,6 +12,47 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+/*  */
+#menu__menu:hover #subwrapper {
+  display: block;
+}
+
+#menu__menu:hover #submenu__list {
+  display: table;
+}
+
+#subwrapper {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  right: 130px;
+}
+
+#subnav {
+  width: 300px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+#submenu__list {
+  display: none;
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+}
+
+#submenu__menu {
+  display: table-cell;
+  height: 30px;
+  cursor: pointer;
+}
+
+#submenu__menu:hover {
+  background-color: #fbe09b;
+}
+
+/*  */
 html,
 body {
   height: 100%;
@@ -340,11 +381,17 @@ ol {
 
 .header {
   position: fixed;
-  top: 0;
   left: 0;
   right: 0;
-  padding: 40px 45px 0;
-  padding-top: 40px;
+  z-index: 100;
+  background-color: transparent; /* Initial background color */
+  color: #fff; /* Initial text color */
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transitions */
+}
+
+.scrolled {
+  background-color: #fff; /* New background color when scrolled */
+  color: #000; /* New text color when scrolled */
 }
 
 @media (max-width: 576px) {
@@ -362,10 +409,19 @@ ol {
 .header__social a,
 .header__switches a {
   display: inline-block;
-  color: #000000;
+  color: #ffffff;
   padding-top: 5px;
   margin-right: 15px;
   font-size: 16px;
+}
+
+.scrolled .header__social a,
+.scrolled .header__switches a {
+  color: #000; /* Change the text color to black when scrolled */
+}
+
+.scrolled .main__menu .nav__menu > li > a {
+  color: #000; /* Change the text color to black when scrolled */
 }
 
 .header__social a:last-child,
@@ -432,7 +488,7 @@ ol {
 .main__menu .nav__menu > li > a {
   position: relative;
   font-size: 16px;
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
   padding: 5px 2px;
   margin-right: 40px;

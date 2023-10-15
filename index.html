@@ -50,6 +50,17 @@
 
 
 </head>
+<script>
+  // JavaScript to handle the scroll event and apply the styles
+  window.addEventListener("scroll", function () {
+    var header = document.getElementById("header");
+    if (window.pageYOffset > 0) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
 
 <body>
   <!-- Page Preloder -->
@@ -75,15 +86,24 @@
         <div class="col-sm-4 col-md-3 order-3 order-sm-3">
           <div class="header__switches">
             <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
-            <a href="#" id="header_style">로그인</a>
-
+            <a href="login.html" id="header_style">로그인</a>
+            <a href="join.html" id="header_style">회원가입</a>
           </div>
         </div>
       </div>
       <nav class="main__menu">
         <ul class="nav__menu" style="padding-bottom: 20px;">
           <li><a href="./index.html">홈</a></li>
-          <li><a href=" ./about.html">이벤트</a></li>
+          <li id="menu__menu"><a href="notice.html">이벤트</a>
+            <div id="subwrapper">
+              <nav id="subnav">
+                <ul id="submenu__list">
+                  <li id="submenu__menu"><a href="notice.html">진행중인 이벤트</a></li>
+                  <li id="submenu__menu"><a href="lastnotice.html">지난 이벤트</a></li>
+                  <li id="submenu__menu"><a href="selectevent.html">당첨자 발표</a></li>
+                </ul>
+              </nav>
+            </div>
           <li><a href="./video.html">비디오</a></li>
           <li><a href="./gallery.html">갤러리</a></li>
           <li><a href="./blog.html">커뮤니티</a></li>
@@ -93,24 +113,27 @@
   </header>
 
   <!-- 오늘의 영상픽 -->
-  <section class="pt-12" id="destination" style="margin-bottom: 120px;">
-    <div class="container">
-      <div class="main-show">
-        <video></video>
-        <p class="main-show-p">Wedding</span>Lery</p>
+  <div style="background-image:url(img/background.jpg); 
+background-color:rgba(0, 0, 0, 0);
+ background-repeat : no-repeat; 
+ background-size : cover; 
+ background-position : 50% 50%;
+ height: 100%;">
+    <section class="pt-12">
 
-        <strong class="main-show-strong">원하던 웨딩을 실현하는 곳 <span class="sub-show">"웨딩러리"</span> 입니다.</strong>
-        <div class="animated-title">
-          <div class="track">
-            <div class="content">&nbsp;WeddingLery&nbsp;&nbsp;WeddingLery&nbsp;WeddingLery
-              &nbsp;WeddingLery&nbsp;WeddingLery</div>
-          </div>
+      <div class="container">
+        <div class="main-show">
+          <p class="main-show-p">Wedding</span>Lery</p>
+          <strong class="main-show-strong">원하던 웨딩을 실현하는 곳 <span class="sub-show">"웨딩러리"</span> 입니다.</strong>
+
         </div>
       </div>
-    </div>
-    </div>
-    </div>
+  </div>
+
+  </div>
+  </div>
   </section>
+  </div>
   <!--오늘의 영상픽 -->
   <section class="pt-12" id="destination" style="margin-bottom: 50px;">
     <div class="container">
@@ -404,7 +427,7 @@
             <ul class="item-list">
               <li class="company-list">
                 <a href="">
-                  <img class="company-img" src="./img/dest/weddingholl.jpeg" alt="벨라비타">
+                  <img class="company-img" src="img/dest/weddingholl.jpeg" alt="벨라비타">
                   <div class="company-info">
                     <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
                     <span class="company-location">서울 강남구</span>
@@ -413,7 +436,7 @@
               </li>
               <li class="company-list">
                 <a href="">
-                  <img class="company-img" src="./img/dest/weddingholl2.jpeg" alt="벨라비타">
+                  <img class="company-img" src="img/dest/weddingholl2.jpeg" alt="벨라비타">
                   <div class="company-info">
                     <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
                     <span class="company-location">서울 강남구</span>
@@ -423,7 +446,7 @@
               </li>
               <li class="company-list">
                 <a href="">
-                  <img class="company-img" src="./img/dest/weddingholl3.jpeg" alt="벨라비타">
+                  <img class="company-img" src="img/dest/weddingholl3.jpeg" alt="벨라비타">
                   <div class="company-info">
                     <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
                     <span class="company-location">서울 강남구</span>
@@ -433,7 +456,7 @@
               </li>
               <li class="company-list">
                 <a href="">
-                  <img class="company-img" src="./img/dest/weddingholl4.jpeg" alt="벨라비타">
+                  <img class="company-img" src="img/dest/weddingholl4.jpeg" alt="벨라비타">
                   <div class="company-info">
                     <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
                     <span class="company-location">서울 강남구</span>
@@ -447,7 +470,7 @@
             <ul class="item-list">
               <li class="company-list">
                 <a href="">
-                  <img class="company-img" src="./img/dest/smallwedding.jpeg" alt="벨라비타">
+                  <img class="company-img" src="img/dest/smallwedding.jpeg" alt="벨라비타">
                   <div class="company-info">
                     <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
                     <span class="company-location">서울 강남구</span>
@@ -457,7 +480,7 @@
               </li>
               <li class="company-list">
                 <a href="">
-                  <img class="company-img" src="./img/dest/smallwedding2.jpeg" alt="벨라비타">
+                  <img class="company-img" src="img/dest/smallwedding2.jpeg" alt="벨라비타">
                   <div class="company-info">
                     <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
                     <span class="company-location">서울 강남구</span>
@@ -467,7 +490,7 @@
               </li>
               <li class="company-list">
                 <a href="">
-                  <img class="company-img" src="./img/dest/smallwedding3.jpeg" alt="벨라비타">
+                  <img class="company-img" src="img/dest/smallwedding3.jpeg" alt="벨라비타">
                   <div class="company-info">
                     <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
                     <span class="company-location">서울 강남구</span>
@@ -477,7 +500,7 @@
               </li>
               <li class="company-list">
                 <a href="">
-                  <img class="company-img" src="./img/dest/smallwedding4.jpeg" alt="벨라비타">
+                  <img class="company-img" src="img/dest/smallwedding4.jpeg" alt="벨라비타">
                   <div class="company-info">
                     <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
                     <span class="company-location">서울 강남구</span>
@@ -505,6 +528,8 @@
 
     <!-- end of .container-->
   </section>
+
+
 
 
   <!-- Hero Section end -->

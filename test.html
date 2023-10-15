@@ -1,537 +1,187 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
-  <title>WeddingLery</title>
-  <meta charset="UTF-8" />
-  <meta name="description" content="WeddingLery" />
-  <meta name="keywords" content="iframe, html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Stylesheets -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
 
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/slicknav.min.css" />
-  <link rel="stylesheet" href="css/fresco.css" />
-  <link rel="stylesheet" href="css/slick.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="css/theme.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;700&family=Roboto:wght@100&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;700&family=Roboto:wght@100;900&display=swap"
-    rel="stylesheet">
+    body {
+      background-color: #f7f7f7;
+    }
 
+    ul>li {
+      list-style: none
+    }
 
-  <!-- Main Stylesheets -->
-  <link rel="stylesheet" href="css/style.css" />
+    a {
+      text-decoration: none;
+    }
 
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400&family=Roboto:wght@100&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
 
+    #joinForm {
+      width: 460px;
+      margin: 0 auto;
+    }
 
+    ul.join_box {
+      border: 1px solid #ddd;
+      background-color: #fff;
+    }
+
+    .checkBox,
+    .checkBox>ul {
+      position: relative;
+    }
+
+    .checkBox>ul>li {
+      float: left;
+    }
+
+    .checkBox>ul>li:first-child {
+      width: 85%;
+      padding: 15px;
+      font-weight: 600;
+      color: #888;
+    }
+
+    .checkBox>ul>li:nth-child(2) {
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      margin-top: -12px;
+    }
+
+    .checkBox textarea {
+      width: 96%;
+      height: 90px;
+      margin: 0 2%;
+      background-color: #f7f7f7;
+      color: #888;
+      border: none;
+    }
+
+    .footBtwrap {
+      margin-top: 15px;
+    }
+
+    .footBtwrap>li {
+      float: left;
+      width: 50%;
+      height: 60px;
+    }
+
+    .footBtwrap>li>button {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      text-align: center;
+      line-height: 60px;
+    }
+
+    .fpmgBt1 {
+      background-color: #fff;
+      color: #888
+    }
+
+    .fpmgBt2 {
+      background-color: lightsalmon;
+      color: #fff
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Page Preloder -->
-  <div id="preloder">
-    <div class="loader"></div>
-  </div>
-
-  <!-- Header Section -->
-  <header class="header" id="header">
-    <div class="container-fluid">
-      <div class="row">
-
-        <div class="col-sm-4 col-md-3 order-2 order-sm-1">
-          <div class="header__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-6 order-1 order-md-2 text-center">
-          <h3 class="main-logo"><span style="color: #ff72a1; ;">웨딩</span>러리</h3>
-        </div>
-        <div class="col-sm-4 col-md-3 order-3 order-sm-3">
-          <div class="header__switches">
-            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
-            <a href="#" id="header_style">로그인</a>
-
-          </div>
-        </div>
-      </div>
-      <nav class="main__menu">
-        <ul class="nav__menu" style="padding-bottom: 20px;">
-          <li><a href="./index.html">홈</a></li>
-          <li><a href=" ./about.html">공지사항</a></li>
-          <li><a href="./video.html">비디오</a></li>
-          <li><a href="./gallery.html">갤러리</a></li>
-          <li><a href="./blog.html">후기</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+  <form action="" id="joinForm">
+    <ul class="join_box">
+      <li class="checkBox check01">
+        <ul class="clearfix">
+          <li>이용약관, 개인정보 수집 및 이용,
+            위치정보 이용약관(선택), 프로모션 안내
+            메일 수신(선택)에 모두 동의합니다.</li>
+          <li class="checkAllBtn">
+            <input type="checkbox" name="chkAll" id="chk" class="chkAll">
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
+      </li>
+      <li class="checkBox check02">
+        <ul class="clearfix">
+          <li>이용약관 동의(필수)</li>
+          <li class="checkBtn">
+            <input type="checkbox" name="chk">
+          </li>
+        </ul>
+        <textarea name="" id="">여러분을 환영합니다.
+네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+</textarea>
+      </li>
+      <li class="checkBox check03">
+        <ul class="clearfix">
+          <li>개인정보 수집 및 이용에 대한 안내(필수)</li>
+          <li class="checkBtn">
+            <input type="checkbox" name="chk">
+          </li>
+        </ul>
 
-  <!-- 오늘의 영상픽 -->
-  <section class="pt-12" id="destination" style="margin-bottom: 100px;">
-    <div class="container">
-      <div class="main-show">
-        <video></video>
-        <p class="main-show-p">Wedding</span>Lery</p>
-        <strong class="main-show-strong">사랑의 아름다움을 영상,갤러리에 담아냅니다.</strong>
-        <strong class="main-show-strong">원하던 웨딩을 실현하는 곳, 웨딩러리입니다.</strong>
-        <div class="animated-title">
-          <div class="track">
-            <div class="content">&nbsp;WeddingLery&nbsp;&nbsp;WeddingLery&nbsp;WeddingLery
-              &nbsp;WeddingLery&nbsp;WeddingLery</div>
-          </div>
-        </div>
-        <div class="scroll-down">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mouse"
-            viewBox="0 0 16 16">
-            <path
-              d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z" />
-          </svg>
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-  <section class="pt-12" id="destination">
-    <div class="container">
+        <textarea name="" id="">여러분을 환영합니다.
+네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+</textarea>
+      </li>
+      <li class="checkBox check03">
+        <ul class="clearfix">
+          <li>위치정보 이용약관 동의(선택)</li>
+          <li class="checkBtn">
+            <input type="checkbox" name="chk">
+          </li>
+        </ul>
 
-      <div class="mb-4 text-left">
-        <div class="container"></div>
-        <h3 class="main-title">오늘의&nbsp;<span class="main-choice">영상</span>픽!</h3>
-        <p class="sub-title">오늘의 영상픽을 통해 생생한 현장감을 통해 확인해 보세요!</p>
-      </div>
-      <div class="choice-all"><a href="#">
-          <span>전체보기</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-          </svg>
-        </a>
-      </div>
-      <div class="row">
-        <div class="video-thrid">
-          <ul class="video-select">
-            <li class="video-list">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/vw6qW1Qnxyk?si=X9tB_KSBCROb6uvQ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-              <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
-            </li>
+        <textarea name="" id="">여러분을 환영합니다.
+네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
+</textarea>
+      </li>
+      <li class="checkBox check04">
+        <ul class="clearfix">
+          <li>이벤트 등 프로모션 알림 메일 수신(선택</li>
+          <li class="checkBtn">
+            <input type="checkbox" name="chk">
+          </li>
+        </ul>
 
-            <li class="video-list">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/SbydDGe8cTE?si=AB5rjoXTFskkEYzX"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-              <span class="video-hashtag">#웨딩 #식전영상</span>
-            </li>
-            <li class="video-list">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/GPup_YXo8HQ?si=LdvGiohgsp43FEBv"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-              <span class="video-hashtag">#웨딩 #어릴적영상</span>
-            </li>
-          </ul>
-        </div>
+      </li>
+    </ul>
+    <ul class="footBtwrap clearfix">
+      <li><button class="fpmgBt1">비동의</button></li>
+      <li><button class="fpmgBt2">동의</button></li>
+    </ul>
+  </form>
 
-      </div>
-    </div>
-
-    </div>
-
-    <!-- end of .container-->
-  </section>
-
-
-  <section class="pt-5" id="destination">
-    <div class="container">
-
-      <div class="mb-4 text-left">
-        <h3 class="main-title">오늘의&nbsp;<span class="main-choice">추천</span>픽!</h3>
-        <p class="sub-title">오늘의 추천픽을 통해 스튜디오, 드레스,메이크업을 결정해보세요!</p>
-      </div>
-      <div class="choice-all"><a href="#">
-          <span>전체보기</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-          </svg>
-        </a>
-      </div>
-      <div class="row">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide" style="display: flex;">
-              <div>
-                <div class="card overflow-hidden">
-                  <div class="timer-wrap"></div>
-                  <span id="timer">03:00:00</span>
-                  <span id="timer-text">3시간마다 오늘의 추천픽이 교체됩니다!</span>
-
-                  <img class="card-img-top" src="img/dest/studio_example.jpg" alt="Rome, Italty" />
-                  <div class="card-body py-4 px-3">
-                    <div class="d-flex flex-column flex-lg-row justify-content-center mb-3">
-                      <h4 class="text-secondary fw-medium">
-                        스튜디오
-                      </h4>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide" style="display: flex;">
-              <div>
-                <div class="card overflow-hidden">
-                  <div class="timer-wrap"></div>
-                  <span id="timer2">02:00:00</span>
-                  <span id="timer-text">3시간마다 오늘의 추천픽이 교체됩니다!</span>
-
-                  <img class="card-img-top" src="img/dest/dress_example.avif" alt="Rome, Italty" />
-                  <div class="card-body py-4 px-3">
-                    <div class="d-flex flex-column flex-lg-row justify-content-center mb-3">
-                      <h4 class="text-secondary fw-medium">
-                        드레스
-                      </h4>
-
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
-                        class="fs-0 fw-medium">벨라비타</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="swiper-slide" style="display: flex;">
-              <div>
-                <div class="card overflow-hidden">
-                  <div class="timer-wrap"></div>
-                  <span id="timer3">03:00:00</span>
-                  <span id="timer-text">3시간마다 오늘의 추천픽이 교체됩니다!</span>
-
-                  <img class="card-img-top" src="img/dest/makeup_example.jpg" alt="Rome, Italty" />
-                  <div class="card-body py-4 px-3">
-                    <div class="d-flex flex-column flex-lg-row justify-content-center mb-3">
-                      <h4 class="text-secondary fw-medium">
-                        메이크업
-                      </h4>
-
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
-                        class="fs-0 fw-medium">벨라비타</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="swiper-slide" style="display: flex;">
-              <div>
-                <div class="card overflow-hidden">
-
-                  <img class="card-img-top" src="img/dest/studio_example.jpg" alt="Rome, Italty" />
-                  <div class="card-body py-4 px-3">
-                    <div class="d-flex flex-column flex-lg-row justify-content-center mb-3">
-                      <h4 class="text-secondary fw-medium">
-                        스튜디오
-                      </h4>
-
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
-                        class="fs-0 fw-medium">벨라비타</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide" style="display: flex;">
-              <div>
-                <div class="card overflow-hidden">
-
-                  <img class="card-img-top" src="img/dest/smallwedding.jpeg" alt="Rome, Italty" />
-                  <div class="card-body py-4 px-3">
-                    <div class="d-flex flex-column flex-lg-row justify-content-center mb-3">
-                      <h4 class="text-secondary fw-medium">
-                        스몰웨딩
-                      </h4>
-
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <img src="img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span
-                        class="fs-0 fw-medium">벨라비타</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-          <div style="margin-bottom: 30px;"></div>
-
-          <div class="swiper-pagination" id="swperpa"></div>
-        </div>
-
-      </div>
-
-      <!-- end of .container-->
-  </section>
-
-  <section class="pt-5" id="destination">
-    <div class="container">
-      <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
-      </div>
-      <div class="mb-2 text-left">
-        <h3 class="main-title">오늘의 지역별&nbsp;<span class="main-choice">추천</span>픽!</h3>
-        <p class="sub-title">카테고리별 맞춤웨딩홀 찾아보세요!</p>
-      </div>
-      <div class="choice-all"><a href="#">
-          <span>전체보기</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrow-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-          </svg>
-        </a>
-      </div>
-      <div class="row">
-        <div class="category-wrap">
-          <div class="category-choice active" data-target="seoul-tab">
-            <div class="choice-select">
-              <div class="text-center">
-                서울
-              </div>
-            </div>
-          </div>
-          <div class="category-choice" data-target="gyeonggi-tab">
-            <div class="choice-select">
-              <div class="text-center">
-                경기
-              </div>
-            </div>
-          </div>
-          <div class="category-choice" data-target="busan-tab">
-            <div class="choice-select ">
-              <div class="text-center">
-                부산
-              </div>
-            </div>
-          </div>
-          <div class="category-choice" data-target="jeju-tab">
-            <div class="choice-select">
-              <div class="text-center">
-                제주
-              </div>
-            </div>
-          </div>
-          <div class="category-choice" data-target="bupenog-tab">
-            <div class="choice-select">
-              <div class=" text-center">
-                부평
-              </div>
-            </div>
-          </div>
-          <div class="category-choice" data-target="youngin-tab">
-            <div class="choice-select">
-              <div class="text-center">
-                용인
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- 탭 내용 -->
-        <div class="tab-content">
-          <div id="seoul-tab" class="tab-pane">
-            <ul class="item-list">
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="./img/dest/weddingholl.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
-                  </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="./img/dest/weddingholl2.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
-
-                  </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="./img/dest/weddingholl3.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
-
-                  </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="./img/dest/weddingholl4.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
-
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div id="gyeonggi-tab" class="tab-pane">
-            <ul class="item-list">
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="./img/dest/smallwedding.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
-
-                  </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="./img/dest/smallwedding2.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
-
-                  </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="./img/dest/smallwedding3.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
-
-                  </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="./img/dest/smallwedding4.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
-
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div id="busan-tab" class="tab-pane">
-            <p>부산 내용</p>
-          </div>
-          <div id="jeju-tab" class="tab-pane">
-            <p>제주 내용</p>
-          </div>
-          <div id="bupenog-tab" class="tab-pane">
-            <p>부평 내용</p>
-          </div>
-          <div id="youngin-tab" class="tab-pane">
-            <p>용인 내용</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- end of .container-->
-  </section>
-
-
-  <!-- Hero Section end -->
-
-  <!-- Footer Section
-    <footer class="footer__section">
-      <div class="container">
-        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  <div class="footer__copyright__text">
-    <p>
-      Copyright &copy;
-      <script>
-        document.write(new Date().getFullYear());
-      </script>
-      All rights reserved | This template is made with
-      <i class="fa fa-heart" aria-hidden="true"></i> by
-      <a href="https://colorlib.com" target="_blank">Colorlib</a>
-    </p>
-  </div>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  </div>
-  </footer>
-  <!-- Footer Section end -->
-
-  <!-- Search Begin -->
-  <div class="search-model">
-    <div class="h-100 d-flex align-items-center justify-content-center">
-      <div class="search-close-switch">+</div>
-      <form class="search-model-form">
-        <input type="text" id="search-input" placeholder="Search here....." />
-      </form>
-    </div>
-  </div>
-  <!-- Search End -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <!--====== Javascripts & Jquery ======-->
-
-  <script src="js/vendor/jquery-3.2.1.min.js"></script>
-  <script src="js/swiper.js"></script>
-  <!-- Bootstrap CSS -->
-  <script src="js/tapmenu.js"></script>
-  <script src="js/headercolor.js"></script>
-  <script src="js/timer.js"></script>
-  <script src="js/jquery.slicknav.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/fresco.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const checkBoxes = document.querySelectorAll("input[type='checkbox'][name='chkAll']");
+    const agreeButton = document.getElementById("agreeButton");
+
+    agreeButton.addEventListener("click", function () {
+      // Check all checkboxes when the "동의" button is clicked
+      checkBoxes.forEach((checkbox) => {
+        checkbox.checked = true;
+      });
+    });
+  });
+</script>
 
 </html>

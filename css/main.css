@@ -60,7 +60,7 @@
 }
 .main-show .main-show-strong {
   font-size: 35px;
-  color: black;
+  color: #fff;
   opacity: 1;
   font-family: "Roboto", sans-serif;
 }
@@ -69,7 +69,7 @@
   font-weight: bold;
   font-size: 40px;
   opacity: 1;
-  color: #f56464;
+  color: #fc7850;
 }
 
 .video-thrid {
@@ -111,7 +111,7 @@
 .main-show .main-show-p {
   font-size: 140px;
 
-  color: black;
+  color: #fff;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
 }

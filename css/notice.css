@@ -1,0 +1,266 @@
+ul {
+  list-style: none;
+}
+
+section.notice {
+  padding: 80px 0;
+}
+
+.page-title {
+  margin-bottom: 60px;
+  margin-top: 100px;
+}
+.back-color{
+  width: 100%;
+  background-color: #FF72A1;
+  padding: 50px;
+}
+
+#title{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #FFE3EC;
+}
+
+#title > a{
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #FFE3EC;
+  margin-right: 10px;
+}
+
+.total-content{
+  font-size: 13px;
+  color: #FF72A1;
+}
+
+.event-title {
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #FFE3EC;
+}
+
+.event-title2 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 15px;
+  color: #FFE3EC;
+}
+
+.notice-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.search {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  font-size: 0;
+}
+
+.search input {
+  width: 864px;
+  height: 30px;
+  border: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+
+
+}
+
+.search-button {
+  border: 0;
+  background-color: white;
+}
+
+.full-color {
+  width: 100%;
+  margin-top: 53px;
+  background: rgba(172, 140, 140, 0.1);
+}
+
+.total-wrap {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.event-list {
+  border-top: 2px solid #000000;
+  padding-top: 50px;
+}
+
+.event-list .event-list-ul {
+  overflow-x: hidden;
+  display: table;
+  width: 100%;
+}
+
+.event-list .event-list-ul .item {
+  display: inline-block;
+  margin: 0 32px 21px 0;
+  vertical-align: top;
+}
+
+.event-list .event-list-ul .item a {
+  box-shadow: 5px 10px 15px 0px rgba(163, 163, 163, 0.2);
+  background: #FFFFFF;
+}
+
+.event-list .event-list-ul .item a {
+
+  width: 268px;
+  display: block;
+  padding: 10px 10px 40px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 16px;
+  white-space: normal;
+  transition: box-shadow 0.2s;
+}
+
+.event-list .event-list-ul .item .img {
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+  height: 216px;
+  text-align: center;
+  background: #f4efeb;
+}
+
+.event-list .event-list-ul .item .img img {
+  height: 216px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+
+}
+
+.event-list .event-list-ul .item .pormotion {
+  overflow: hidden
+}
+
+.event-list .event-list-ul .item .pormotion .red {
+  background-color: red;
+}
+
+.event-list .event-list-ul .item .tit {
+
+  color: #333333;
+  font-size: 18px;
+  line-height: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.event-list .event-list-ul .item .con {
+  color: #777777;
+  line-height: 30px;
+  height: 53px;
+}
+
+.event-list .event-list-ul .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* */
+table {
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  
+}
+
+tbody{
+  background-color: #AC8C8C;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+th {
+  text-align: left;
+
+}
+  
+thead {
+  font-weight: bold;
+  color: #fff;
+  background: #FF72A1;
+}
+  
+ td, th {
+  padding: 1em .5em;
+  vertical-align: middle;
+  border: none;
+}
+
+
+  
+ td {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  
+  background: #fff;
+}
+
+a {
+  color: #73685d;
+}
+  
+ @media all and (max-width: 768px) {
+    
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  th {
+    text-align: right;
+  }
+  
+  table {
+    position: relative; 
+    padding-bottom: 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  
+  thead {
+    float: left;
+    white-space: nowrap;
+  }
+  
+  tbody {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+    
+  }
+  
+  tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  th {
+    border-bottom: 1px solid #a39485;
+  }
+  
+  td {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  
+  }
+/* */
