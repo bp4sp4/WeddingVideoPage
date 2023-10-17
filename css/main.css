@@ -1,7 +1,11 @@
 #header_style {
   text-decoration: none;
 }
-
+#backimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .animated-title {
   color: #adacac;
   font-size: 140px;
