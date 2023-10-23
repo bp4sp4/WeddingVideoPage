@@ -64,7 +64,7 @@
 }
 .main-show .main-show-strong {
   font-size: 35px;
-  color: #fff;
+  color: #000;
   opacity: 1;
   font-family: "Roboto", sans-serif;
 }
@@ -115,7 +115,7 @@
 .main-show .main-show-p {
   font-size: 140px;
 
-  color: #fff;
+  color: #000;
   font-weight: 900;
   font-family: "Roboto", sans-serif;
 }

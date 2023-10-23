@@ -50,17 +50,6 @@
 
 
 </head>
-<script>
-  // JavaScript to handle the scroll event and apply the styles
-  window.addEventListener("scroll", function () {
-    var header = document.getElementById("header");
-    if (window.pageYOffset > 0) {
-      header.classList.add("scrolled");
-    } else {
-      header.classList.remove("scrolled");
-    }
-  });
-</script>
 
 <body>
   <!-- Page Preloder -->
@@ -81,7 +70,7 @@
           </div>
         </div>
         <div class="col-sm-4 col-md-6 order-1 order-md-2 text-center">
-          <h3 class="main-logo"><span style="color: #ff72a1; ;">웨딩</span>러리</h3>
+          <h3 class="main-logo"><img style="width: 150px;" src="img/back.jpeg" alt=""></h3>
         </div>
         <div class="col-sm-4 col-md-3 order-3 order-sm-3">
           <div class="header__switches">
@@ -113,26 +102,29 @@
   </header>
 
   <!-- 오늘의 영상픽 -->
-  <div id="backimg" style="background-image:url(img/background.jpg); 
-background-color:rgba(0, 0, 0, 0);
- background-repeat : no-repeat; 
- background-size : cover; 
- background-position : 50% 50%;
- height: 100%;">
-    <div class="container">
+  <section class="pt-12" style="height: 100%;">
+    <div style="display: flex; justify-content: center; align-items: center; height: 50%;">
       <div class="main-show">
         <p class="main-show-p">Wedding</span>Lery</p>
         <strong class="main-show-strong">원하던 웨딩을 실현하는 곳 <span class="sub-show">"웨딩러리"</span> 입니다.</strong>
 
+        <div class="animated-title">
+          <div class="track">
+            <div class="content">
+              &nbsp;WeddingLery&nbsp;WeddingLery&nbsp;WeddingLery&nbsp;WeddingLery&nbsp;WeddingLery&nbsp;WeddingLery
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
   <!--오늘의 영상픽 -->
-  <section class="pt-12" id="destination" style="margin-bottom: 50px;">
+  <section class="pt-6" id="destination">
+
     <div class="container">
-      <div class="mb-4 text-left">
-        <h3 class="main-title">오늘의&nbsp;<span class="main-choice">영상</span>픽!</h3>
-        <p class="sub-title">오늘의 영상픽을 통해 생생한 현장감을 느껴보세요!</p>
+      <div class="">
+        <h3 class="main-title">오늘의&nbsp;<span class="main-choice">추천</span> 영상픽!</h3>
+        <p class="sub-title">오늘의 추천 영상픽을 통해 생생한 현장감을 느껴보세요!</p>
       </div>
       <div class="choice-all"><a href="#">
           <span>전체보기</span>
@@ -228,7 +220,7 @@ background-color:rgba(0, 0, 0, 0);
   <section class="pt-6" id="destination">
     <div class="container">
       <div class="mb-4 text-left">
-        <h3 class="main-title">오늘의&nbsp;<span class="main-choice">추천</span>픽!</h3>
+        <h3 class="main-title">금주의&nbsp;인기 동영상<span class="main-choice"> TOP3!</span></h3>
         <p class="sub-title">오늘의 추천픽을 통해 스튜디오, 드레스,메이크업을 결정해보세요!</p>
       </div>
       <div class="choice-all"><a href="#">
@@ -352,12 +344,12 @@ background-color:rgba(0, 0, 0, 0);
   </section>
 
   <!-- 카테고리별 추천픽(하드코딩)-->
-  <section class="pt-5" id="destination">
+  <section class="pt-6" id="destination">
     <div class="container">
       <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
       </div>
       <div class="mb-2 text-left">
-        <h3 class="main-title">오늘의 카테고리별&nbsp;<span class="main-choice">추천</span>픽!</h3>
+        <h3 class="main-title">영상별 카테고리&nbsp;<span class="main-choice">추천</span>픽!</h3>
         <p class="sub-title">카테고리별 맞춤웨딩홀 찾아보세요!</p>
       </div>
       <div class="choice-all"><a href="#">
