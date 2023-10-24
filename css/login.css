@@ -7,8 +7,8 @@
   }
   .login {
     width: 100%;
-    height: 700px;
-    background: rgb(255, 255, 255);
+    height: 900px;
+
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -30,13 +30,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(172, 140, 140, 0.1);
   }
 
   .login {
     width: 60%;
     height: 700px;
-    background: rgb(255, 255, 255);
+
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -86,11 +85,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(172, 140, 140, 0.1);
+    background: rgba(255, 255, 255, 0.1);
   }
 
   .login {
-    width: 30%;
+    width: 50%;
     height: 700px;
     background: rgb(255, 255, 255);
     border-radius: 20px;

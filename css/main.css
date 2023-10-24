@@ -125,6 +125,7 @@
 }
 .main-title .main-choice {
   color: #ff72a1;
+  font-size: 40px;
 }
 .sub-title {
   font-size: 18px;
@@ -193,6 +194,7 @@
   font-family: "Noto Sans KR", sans-serif;
   text-align: right;
 }
+
 .swiper-pagination span {
   background-color: #ff72a1;
 }

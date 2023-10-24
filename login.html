@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Main Stylesheets -->
-    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/slicknav.min.css" />
     <link rel="stylesheet" href="css/fresco.css" />
@@ -20,103 +20,128 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;700&family=Roboto:wght@100&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;700&family=Roboto:wght@100;900&display=swap"
-        rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400&family=Roboto:wght@100&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css" />
+
+
+
     <meta charset="UTF-8">
 
     <title>무비플라자 : 로그인</title>
 </head>
 
 <body>
+    <header class="header" id="header" style="border-bottom: 1px solid #ccc; padding-bottom: 20px; ">
+        <div class="container-fluid">
+            <div class="row">
 
-    <form action="" method="">
-        <div class="wrap">
-            <div class="login">
-                <a href="index.html">
-                    <h3 style="font-size:50px;  font-family: 'Noto Sans KR', sans-serif;">WeddingLery</h3>
-                </a>
-                <!--이메일 입력-->
-                <div class="login_id">
-                    <h4 style=" font-family: 'Noto Sans KR', sans-serif;">이메일</h4>
-                    <input type="text" name="m_id" class="pos" placeholder="Email(이메일)">
-                </div>
-                <!--비밀번호 입력-->
-                <div class="login_pw">
-                    <h4 style=" font-family: 'Noto Sans KR', sans-serif;">비밀번호</h4>
-                    <input type="password" name="m_pw" class="pos" placeholder="비밀번호">
-                </div>
-                <!--로그인 버튼-->
-                <div class="submit">
-                    <input style="  font-family: 'Noto Sans KR', sans-serif;" type="submit" value="로그인">
-                </div>
-                <br>
-                <!--아이디 찾기-->
-                <div class="loginmenu">
-                    <div class="schid">
-                        <c:url var="mvfindId" value="/moveIdRecovery.do" />
-                        <a href="idfind.html">
-                            <p style="font-family: 'Noto Sans KR', sans-serif;">아이디찾기</p>
-                        </a>
-                    </div>
-                    <span style="margin-top: 8px;">|</span>
-                    <!--비밀번호 찾기-->
-                    <div class="schpw">
-                        <c:url var="mvfindPwd" value="/movePwdRecovery.do" />
-                        <a href="pwfind.html">
-                            <p style="  font-family: 'Noto Sans KR', sans-serif;">비밀번호찾기</p>
-                        </a>
-                    </div>
-                    <!--비밀번호 찾기-->
-                    <span style="margin-top: 8px;">|</span>
-                    <div class="schpw">
-                        <c:url var="mvfindPwd" value="/movePwdRecovery.do" />
-                        <a href="pwfind.html">
-                            <p style="  font-family: 'Noto Sans KR', sans-serif;">회원가입</p>
-                        </a>
+                <div class="col-sm-4 col-md-3 order-2 order-sm-1">
+                    <div class="header__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
-                <br>
-                <!--카카오 로그인 -->
-                <div style="width: 80%;">
-                    <div id="kakao_id_login" class="kakao_id_login" style="text-align: center">
-                        <a href="" class="cp">
-                            <img class="sothumb" src="/img/kakao2.png">
-                        </a>
-                    </div>
-                    <!-- 네이버 로그인 -->
-                    <div id="ndfin" style="text-align:center">
-                        <a href="" id='.cp_naver'>
-                            <img class="sothumb" src="/img/nav.png">
-                        </a>
+                <div class="col-sm-4 col-md-6 order-1 order-md-2 text-center">
+                    <h3 class="main-logo"><img style="width: 150px;" src="img/back.jpeg" alt=""></h3>
+                </div>
+                <div class="col-sm-4 col-md-3 order-3 order-sm-3">
+                    <div class="header__switches">
+                        <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+                        <a href="#" class="nav-switch"><i class="fa fa-bars"></i></a>
+                        <a href="login.html" id="header_style">로그인</a>
+                        <a href="join.html" id="header_style">회원가입</a>
                     </div>
                 </div>
             </div>
+            <nav class="main__menu">
+                <ul class="nav__menu">
+                    <li><a href=" ./index.html">홈</a></li>
+                    <li id="menu__menu"><a href="notice.html">이벤트</a>
+                        <div id="subwrapper">
+                            <nav id="subnav">
+                                <ul id="submenu__list">
+                                    <li id="submenu__menu"><a href="notice.html">진행중인 이벤트</a></li>
+                                    <li id="submenu__menu"><a href="lastnotice.html">지난 이벤트</a></li>
+                                    <li id="submenu__menu"><a href="selectevent.html">당첨자 발표</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    <li><a href="./video.html">비디오</a></li>
+                    <li><a href="./gallery.html">갤러리</a></li>
+                    <li><a href="./blog.html">커뮤니티</a></li>
+                </ul>
+            </nav>
         </div>
-    </form>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </header>
+
+    <section>
+
+        <form action="" method="">
+            <div class="wrap">
+                <div class="login">
+                    <!--이메일 입력-->
+                    <div class="login_id">
+                        <h4 style=" font-family: 'Noto Sans KR', sans-serif;">이메일</h4>
+                        <input type="text" name="m_id" class="pos" placeholder="이메일(Email)을 입력해주세요.">
+                    </div>
+                    <!--비밀번호 입력-->
+                    <div class="login_pw">
+                        <h4 style=" font-family: 'Noto Sans KR', sans-serif;">비밀번호</h4>
+                        <input type="password" name="m_pw" class="pos" placeholder="비밀번호(Password)를 입력해주세요">
+                    </div>
+                    <!--로그인 버튼-->
+                    <div class="submit">
+                        <input style="  font-family: 'Noto Sans KR', sans-serif;" type="submit" value="로그인">
+                    </div>
+                    <br>
+                    <!--아이디 찾기-->
+                    <div class="loginmenu">
+                        <div class="schid">
+                            <c:url var="mvfindId" value="/moveIdRecovery.do" />
+                            <a href="idfind.html">
+                                <p style="font-family: 'Noto Sans KR', sans-serif;">아이디찾기</p>
+                            </a>
+                        </div>
+                        <span style="margin-top: 8px;">|</span>
+                        <!--비밀번호 찾기-->
+                        <div class="schpw">
+                            <c:url var="mvfindPwd" value="/movePwdRecovery.do" />
+                            <a href="pwfind.html">
+                                <p style="  font-family: 'Noto Sans KR', sans-serif;">비밀번호찾기</p>
+                            </a>
+                        </div>
+                        <!--비밀번호 찾기-->
+                        <span style="margin-top: 8px;">|</span>
+                        <div class="schpw">
+                            <c:url var="mvfindPwd" value="/movePwdRecovery.do" />
+                            <a href="pwfind.html">
+                                <p style="  font-family: 'Noto Sans KR', sans-serif;">회원가입</p>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <!--카카오 로그인 -->
+                    <div style="width: 80%;">
+                        <div id="kakao_id_login" class="kakao_id_login" style="text-align: center">
+                            <a href="" class="cp">
+                                <img class="sothumb" src="/img/kakao2.png">
+                            </a>
+                        </div>
+                        <!-- 네이버 로그인 -->
+                        <div id="ndfin" style="text-align:center">
+                            <a href="" id='.cp_naver'>
+                                <img class="sothumb" src="/img/nav.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
     <!--====== Javascripts & Jquery ======-->
 
-    <script src="js/swiperhoverstop.js"></script>
+
     <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <script src="js/swiper.js"></script>
     <!-- Bootstrap CSS -->
@@ -124,6 +149,7 @@
     <script src="js/headercolor.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/slick.min.js"></script>
+
     <script src="js/fresco.min.js"></script>
     <script src="js/main.js"></script>
 </body>
