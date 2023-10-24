@@ -1,6 +1,6 @@
 
 # 23/10/25 생성 디자인 추후 계속 업데이트 예정
-웨딩러리 데모사이트 - <a href="https://bp4sp4.github.io/WeddingVideoPage" target="_blank">홈페이지</a> <br>
+웨딩러리 데모사이트 - <a  target="_blank" href="https://bp4sp4.github.io/WeddingVideoPage" >홈페이지</a> <br>
 
 <h3>웨딩러리 - 퍼블리싱 </h3>
 
