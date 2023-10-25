@@ -1,125 +1,235 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/css/button.css" />
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="/css/default.css" />
     <link rel="stylesheet" href="/css/content.css" />
     <link rel="stylesheet" href="/css/contrat.css">
-    <link rel="stylesheet" href="/css/join.css">
-<title>웨딩러리-회원가입</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#emailBtn").click(function() {
-            var email = $('#u_email').val();
-            
-            $.ajax({
-                url: '/emailCheck.do',
-                type: 'post',
-                data: email,
-                success: function(result) {
-                	if (result === "available") {
-                	    $('#emailDupCheckMsg').text("").css("color", "green");
-                	    
-                	    // 이메일이 중복되지 않았을 때 가입 버튼 활성화
-                	    $("#signupBtn").prop("disabled", false);
-                	} else if (result === "duplicate") {
-                	    $('#emailDupCheckMsg').text("이미 사용 중인 이메일입니다.").css("color", "red");
-                	    
-                	    // 이메일이 중복될 경우 가입 버튼 비활성화
-                	    $("#signupBtn").prop("disabled", true);
-                	    
-                	    // 중복되었을 때 알림창 띄우기
-                	    alert("중복된 이메일 주소입니다. 다른 이메일을 사용하세요.");
-                	}
-                },
-                error: function() {
-                    $('#emailDupCheckMsg').text("에러가 발생했습니다.").css("color", "red");
-                }
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/fresco.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/join.css">
+    <title>웨딩러리-회원가입</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#emailBtn").click(function () {
+                var email = $('#u_email').val();
+
+                $.ajax({
+                    url: '/emailCheck.do',
+                    type: 'post',
+                    data: email,
+                    success: function (result) {
+                        if (result === "available") {
+                            $('#emailDupCheckMsg').text("").css("color", "green");
+
+                            // 이메일이 중복되지 않았을 때 가입 버튼 활성화
+                            $("#signupBtn").prop("disabled", false);
+                        } else if (result === "duplicate") {
+                            $('#emailDupCheckMsg').text("이미 사용 중인 이메일입니다.").css("color", "red");
+
+                            // 이메일이 중복될 경우 가입 버튼 비활성화
+                            $("#signupBtn").prop("disabled", true);
+
+                            // 중복되었을 때 알림창 띄우기
+                            alert("중복된 이메일 주소입니다. 다른 이메일을 사용하세요.");
+                        }
+                    },
+                    error: function () {
+                        $('#emailDupCheckMsg').text("에러가 발생했습니다.").css("color", "red");
+                    }
+                });
             });
         });
-    });
-    //비밀번호 생성 조건 
-    function chkPwd() {
-       var pwd1 = document.getElementById("upwd1").value;
-       var pwd2 = document.getElementById("upwd2").value;
-       var passRule = /^(?=.*[a-zA-Z])((?=.*\d)(?=.*\W)).{8,16}$/;
-       const chkPwdRuleMsg = $('#pwRuleChk');
+        //비밀번호 생성 조건 
+        function chkPwd() {
+            var pwd1 = document.getElementById("upwd1").value;
+            var pwd2 = document.getElementById("upwd2").value;
+            var passRule = /^(?=.*[a-zA-Z])((?=.*\d)(?=.*\W)).{8,16}$/;
+            const chkPwdRuleMsg = $('#pwRuleChk');
 
-       if (passRule.test(pwd1) === false) {
-          chkPwdRuleMsg
-                .html("비밀번호는 8~16자의 영문 대소문자와 숫자, 특수문자를 적어도 하나는 포함해야 합니다.");
-          chkPwdRuleMsg.css('color', 'red');
-       } else {
-          chkPwdRuleMsg.html("");
-       }
+            if (passRule.test(pwd1) === false) {
+                chkPwdRuleMsg
+                    .html("비밀번호는 8~16자의 영문 대소문자와 숫자, 특수문자를 적어도 하나는 포함해야 합니다.");
+                chkPwdRuleMsg.css('color', 'red');
+            } else {
+                chkPwdRuleMsg.html("");
+            }
 
-    }
+        }
 
-    // 비밀번호 일치여부 
-    function validPW() {
-       var pwd1 = document.getElementById("upwd1").value;
-       var pwd2 = document.getElementById("upwd2").value;
-       const chkpwdMsg = $('#chkPwdMessage');
+        // 비밀번호 일치여부 
+        function validPW() {
+            var pwd1 = document.getElementById("upwd1").value;
+            var pwd2 = document.getElementById("upwd2").value;
+            const chkpwdMsg = $('#chkPwdMessage');
 
-       if (pwd1 !== pwd2) {
-          chkpwdMsg.html("비밀번호가 일치하지 않습니다.");
-          chkpwdMsg.css('color', 'red');
-       } else {
-          chkpwdMsg.html("비밀번호가 일치합니다.");
-          chkpwdMsg.css('color', 'green');
-       }
-    }
-    function checkAgreement() {
-		var agreeCheckbox = document.getElementById("agreeCheckbox");
-		var submitButton = document.getElementById("submitButton"); // 예시: 버튼 요소의 ID
+            if (pwd1 !== pwd2) {
+                chkpwdMsg.html("비밀번호가 일치하지 않습니다.");
+                chkpwdMsg.css('color', 'red');
+            } else {
+                chkpwdMsg.html("비밀번호가 일치합니다.");
+                chkpwdMsg.css('color', 'green');
+            }
+        }
+        function checkAgreement() {
+            var agreeCheckbox = document.getElementById("agreeCheckbox");
+            var submitButton = document.getElementById("submitButton"); // 예시: 버튼 요소의 ID
 
-		if (agreeCheckbox.checked) {
-			// 체크되었을 때 수행할 동작
-			submitButton.disabled = false; // 버튼을 활성화
-		} else {
-			// 해제되었을 때 수행할 동작
-			submitButton.disabled = true; // 버튼을 비활성화
-		}
-	}
-	function validateForm() {
-		var agreeCheckbox = document.getElementById("agreeCheckbox");
+            if (agreeCheckbox.checked) {
+                // 체크되었을 때 수행할 동작
+                submitButton.disabled = false; // 버튼을 활성화
+            } else {
+                // 해제되었을 때 수행할 동작
+                submitButton.disabled = true; // 버튼을 비활성화
+            }
+        }
+        function validateForm() {
+            var agreeCheckbox = document.getElementById("agreeCheckbox");
 
-		if (!agreeCheckbox.checked) {
-			alert("이용약관에 동의해야 회원가입이 가능합니다.");
-			return false; // Prevent form submission
-		}
+            if (!agreeCheckbox.checked) {
+                alert("이용약관에 동의해야 회원가입이 가능합니다.");
+                return false; // Prevent form submission
+            }
 
-		return true; // Allow form submission
-	}
-	
+            return true; // Allow form submission
+        }
 
-    $(document).ready(function() {
-	$("#cbx_chkAll").click(function() {
-		if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
-		else $("input[name=chk]").prop("checked", false);
-	});
 
-	$("input[name=chk]").click(function() {
-		var total = $("input[name=chk]").length;
-		var checked = $("input[name=chk]:checked").length;
+        $(document).ready(function () {
+            $("#cbx_chkAll").click(function () {
+                if ($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+                else $("input[name=chk]").prop("checked", false);
+            });
 
-		if(total != checked) $("#cbx_chkAll").prop("checked", false);
-		else $("#cbx_chkAll").prop("checked", true); 
-	});
-});
-	
-</script>
+            $("input[name=chk]").click(function () {
+                var total = $("input[name=chk]").length;
+                var checked = $("input[name=chk]:checked").length;
+
+                if (total != checked) $("#cbx_chkAll").prop("checked", false);
+                else $("#cbx_chkAll").prop("checked", true);
+            });
+        });
+
+
+    </script>
 
 </head>
-	<body>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header class="header" id="header" style="border-bottom: 1px solid #ccc; padding-bottom: 40px; ">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-4 col-md-3 order-2 order-sm-1">
+                    <div class="header__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6 order-1 order-md-2 text-center">
+                    <h3 class="main-logo"><img style="width: 150px;" src="img/back.jpeg" alt=""></h3>
+                </div>
+                <div class="col-sm-4 col-md-3 order-3 order-sm-3">
+                    <div class="header__switches">
+                        <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+                        <a href="#" class="nav-switch"><i class="fa fa-bars"></i></a>
+                        <a href="login.html" id="header_style">로그인</a>
+                        <a href="join.html" id="header_style">회원가입</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="main__menu">
+                <ul class="nav__menu">
+                    <li><a href=" ./index.html">홈</a></li>
+                    <li id="menu__menu"><a href="notice.html">이벤트</a>
+                        <div id="subwrapper">
+                            <nav id="subnav">
+                                <ul id="submenu__list">
+                                    <li id="submenu__menu"><a href="notice.html">진행중인 이벤트</a></li>
+                                    <li id="submenu__menu"><a href="lastnotice.html">지난 이벤트</a></li>
+                                    <li id="submenu__menu"><a href="selectevent.html">당첨자 발표</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    <li><a href="./video.html">비디오</a></li>
+                    <li><a href="./gallery.html">갤러리</a></li>
+                    <li><a href="./blog.html">커뮤니티</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <form action="/signupGo.do" method="post" class="container">
         <!-- 이용약관 -->
         <!-- terms and conditions -->
+
+
+        <!-- 회원 정보 -->
+        <div class="wrap">
+            <div class="login">
+                <h3>회원가입</h3>
+                <br><br>
+                <div class="textForm2">
+                    <!--이메일 입력-->
+                    <input type="email" class="m_email" name="u_email" id="u_email" placeholder="이메일을 입력해주세요."
+                        required="">
+                    <div class="emailchk">
+                        <!--이메일 중복확인-->
+                        <button type="button" id="emailBtn" class="bttn">중복 확인</button>
+                        <span id="emailDupCheckMsg" style="color: red;"></span>
+
+                        <!-- 중복확인 결과를 나타내는 스팬 --><!-- 중복확인 결과를 나타내는 스팬 -->
+                    </div>
+                </div>
+                <!--비밀번호 확인-->
+                <div class="textForm">
+                    <input type="password" class="pw" name="u_pw" id="upwd1" oninput="chkPwd();"
+                        placeholder="비밀번호를 입력해주세요." required=""> <br><span id="chkPwdMessage"></span>
+                </div>
+                <!--비밀번호 재확인-->
+                <div class="textForm">
+                    <input type="password" class="pw" id="upwd2" oninput="validPW();" placeholder="비밀번호 확인"> <br> <span
+                        id="pwRuleChk"></span>
+                </div>
+                <!--닉네임 중복확인-->
+                <div class="textForm">
+                    <input type="text" name="u_name" id="u_name" oninput="dupCheckNick();" class="id"
+                        placeholder="이름을 입력해주세요." required=""> <br>
+                    <div> <span id="nicknameDupCheckMsg"></span></div>
+                </div>
+                <!--닉네임 중복확인-->
+                <div class="textForm">
+                    <input type="text" name="u_pnone" id="u_phone" oninput="dupCheckNick();" class="id"
+                        placeholder="숫자만 입력해주세요." required=""> <br> <span id="nicknameDupCheckMsg"></span>
+                </div>
+                <br>
+
+                <div class="sub-btn">
+                    <input class="submit2" type="submit" value="가입하기" id="signupBtn" disabled="">&nbsp;
+                    <a id="mainmove" href="/MoviePlaza/index.html">홈으로</a>
+                </div>
+            </div>
+        </div>
         <div class="TandC">
             <!-- 전체 동의 -->
             <div style="border-bottom: 1px solid gray;">
@@ -154,51 +264,7 @@
             </div>
         </div>
 
-        <!-- 회원 정보 -->
-        <div class="wrap">
-            <div class="login">
-                <h3 text-align="center" style="font-family: 'Noto Sans KR', sans-serif; font-size : 40px">회원가입</h3><br><br><br>
-                <div class="textForm2">
-                    <!--이메일 입력-->
-                    <input type="email" class="m_email" name="u_email" id="u_email" placeholder="이메일을 입력해주세요."
-                        required="">
-                    <div class="emailchk">
-                        <!--이메일 중복확인-->
-                        <button type="button" id="emailBtn" class="bttn">중복 확인</button>
-                        <span id="emailDupCheckMsg" style="color: red;"></span>
-
-                        <!-- 중복확인 결과를 나타내는 스팬 --><!-- 중복확인 결과를 나타내는 스팬 -->
-                    </div>
-                </div>
-                <!--비밀번호 확인-->
-                <div class="textForm">
-                    <input type="password" class="pw" name="u_pw" id="upwd1" oninput="chkPwd();"
-                        placeholder="비밀번호를 입력해주세요." required=""> <br><span id="chkPwdMessage"></span>
-                </div>
-                <!--비밀번호 재확인-->
-                <div class="textForm">
-                    <input type="password" class="pw" id="upwd2" oninput="validPW();" placeholder="비밀번호 확인"> <br> <span
-                        id="pwRuleChk"></span>
-                </div>
-                <!--닉네임 중복확인-->
-                <div class="textForm">
-                    <input type="text" name="u_name" id="u_name" oninput="dupCheckNick();" class="id"
-                        placeholder="이름을 입력해주세요." required=""> <br><div> <span id="nicknameDupCheckMsg"></span></div>
-                </div>
-                <!--닉네임 중복확인-->
-                <div class="textForm">
-                    <input type="text" name="u_pnone" id="u_phone" oninput="dupCheckNick();" class="id"
-                        placeholder="숫자만 입력해주세요." required=""> <br> <span id="nicknameDupCheckMsg"></span>
-                </div>
-                <br>
-
-                <div class="sub-btn">
-                    <input class="submit2" type="submit" value="가입하기" id="signupBtn" disabled="">&nbsp;
-                    <a id="mainmove" href="/MoviePlaza/index.html">홈으로</a>
-                </div>
-            </div>
-        </div>
-</form>
+    </form>
     <!--/* 개인약관 popup */-->
     <div id="soloagree" class="popLayer">
         <h3>이용약관동의(필수)</h3>
@@ -374,10 +440,43 @@ ID, 성명, 비밀번호, 주소, 휴대폰 번호, 이메일, 14세 미만 가�
                     class="far fa-times-circle"></i></span></button>
     </div>
 
-<script src="/js/common.js"></script>
-<script src="/js/function.js"></script>
-<script src="https://kit.fontawesome.com/79613ae794.js" crossorigin="anonymous"></script>
-  <script>
+    <div class="footer-section">
+        <div class="footer-section-wrap">
+            <div class="footer-logo">
+                <img src="img/back.jpeg" alt="로고">
+                <div class="footer-content">
+                    <ul>
+                        <li>주소 : 서울특별시 강남구강남구 이런이런이런주소</li>
+                        <li>팩스번호 : 0202020202 &nbsp; 대표전화 : 02020202020</li>
+                        <li>이메일 : test23@naver.com &nbsp;사업자 등록번호 : 020202</li>
+                        <li>사업자 등록번호 : 0202020</li>
+
+                    </ul>
+                    <p class="copyright">Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        WeddingLery All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/common.js"></script>
+    <script src="/js/function.js"></script>
+    <script src="https://kit.fontawesome.com/79613ae794.js" crossorigin="anonymous"></script>
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.js"></script>
+
+    <script src="js/tapmenu.js"></script>
+    <script src="js/headercolor.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <script src="js/fresco.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
 
         // 회원가입 팝업 open
         function opensoloagree() {
@@ -406,4 +505,5 @@ ID, 성명, 비밀번호, 주소, 휴대폰 번호, 이메일, 14세 미만 가�
     </script>
 
 </body>
+
 </html>
