@@ -2,6 +2,12 @@
 
 웨딩러리 데모사이트 - <a  target="_blank" href="https://bp4sp4.github.io/WeddingVideoPage" >홈페이지</a> <br>
 
+# 23/10/27
+
+<h3>웨딩러리 - 퍼블리싱 </h3>
+- 회원가입 로그인폼 -디자인 완
+- 메인 컬러 예정 - color: #b6a368;
+
 # 23/10/26
 
 <h3>웨딩러리 - 퍼블리싱 </h3>
