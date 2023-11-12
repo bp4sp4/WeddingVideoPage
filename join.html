@@ -178,98 +178,98 @@
         </div>
     </header>
 
-    <section>
-        <form action="/signupGo.do" method="post" class="container">
-            <!-- 이용약관 -->
-            <!-- terms and conditions -->
+
+    <form action="/signupGo.do" method="post" class="container">
+        <!-- 이용약관 -->
+        <!-- terms and conditions -->
 
 
-            <!-- 회원 정보 -->
-            <div class="wrap">
-                <div class="login">
+        <!-- 회원 정보 -->
+        <div class="wrap">
+            <div class="login">
 
-                    <h3 style="margin-bottom: 30px;">회원가입</h3>
+                <h3 style="margin-bottom: 30px;">회원가입</h3>
 
-                    <div class="textForm2">
-                        <!--이메일 입력-->
-                        <input type="email" class="m_email" name="u_email" id="u_email" placeholder="이메일을 입력해주세요."
-                            required="">
-                        <div class="emailchk">
-                            <!--이메일 중복확인-->
-                            <button type="button" id="emailBtn" class="bttn">중복 확인</button>
-                            <span id="emailDupCheckMsg" style="color: red;"></span>
+                <div class="textForm2">
+                    <!--이메일 입력-->
+                    <input type="email" class="m_email" name="u_email" id="u_email" placeholder="이메일을 입력해주세요."
+                        required="">
+                    <div class="emailchk">
+                        <!--이메일 중복확인-->
+                        <button type="button" id="emailBtn" class="bttn">중복 확인</button>
+                        <span id="emailDupCheckMsg" style="color: red;"></span>
 
-                            <!-- 중복확인 결과를 나타내는 스팬 --><!-- 중복확인 결과를 나타내는 스팬 -->
-                        </div>
-                    </div>
-                    <!--비밀번호 확인-->
-                    <div class="textForm">
-                        <input type="password" class="pw" name="u_pw" id="upwd1" oninput="chkPwd();"
-                            placeholder="비밀번호를 입력해주세요." required=""> <br><span id="chkPwdMessage"></span>
-                    </div>
-                    <!--비밀번호 재확인-->
-                    <div class="textForm">
-                        <input type="password" class="pw" id="upwd2" oninput="validPW();" placeholder="비밀번호 확인"> <br>
-                        <span id="pwRuleChk"></span>
-                    </div>
-                    <!--닉네임 중복확인-->
-                    <div class="textForm">
-                        <input type="text" name="u_name" id="u_name" oninput="dupCheckNick();" class="id"
-                            placeholder="이름을 입력해주세요." required=""> <br>
-                        <div> <span id="nicknameDupCheckMsg"></span></div>
-                    </div>
-                    <!--닉네임 중복확인-->
-                    <div class="textForm">
-                        <input type="text" name="u_pnone" id="u_phone" oninput="dupCheckNick();" class="id"
-                            placeholder="숫자만 입력해주세요." required=""> <br> <span id="nicknameDupCheckMsg"></span>
-                    </div>
-                    <br>
-
-                    <div class="TandC">
-                        <!-- 전체 동의 -->
-                        <div style="border-bottom: 1px solid gray;">
-                            <span>전체 동의</span>
-                            <input type="checkbox" name="" id="cbx_chkAll">
-                        </div>
-
-                        <!-- 필수 1 -->
-                        <div>
-                            <span><strong>(필수)</strong> 이용약관동의 <button style="margin-top: -3px;" type="button"
-                                    onclick="opensoloagree()">상세 보기</button></span>
-                            <input type="checkbox" name="chk" id="">
-                        </div>
-
-                        <!-- 필수 2 -->
-                        <div>
-                            <span><strong>(필수)</strong> 개인정보 수집 및 이용 동의 <button style="margin-top: -3px;" type="button"
-                                    onclick="opensoloprivacy()">상세 보기</button></span>
-                            <input type="checkbox" name="chk" id="">
-                        </div>
-
-                        <!-- 선택 1 -->
-                        <div>
-                            <span>(선택) 마케팅 정보 수신 동의 - 이메일 <button type="button"></button></span>
-                            <input type="checkbox" name="chk" id="">
-                        </div>
-
-                        <!-- 선택 2 -->
-                        <div>
-                            <span>(선택) 마케팅 정보 수신 동의 - SMS/MMS <button type="button"></button></span>
-                            <input type="checkbox" name="chk" id="">
-                        </div>
-
-                    </div>
-                    <div class="sub-btn">
-                        <input class="submit2" type="submit" value="가입하기" id="signupBtn" disabled="">&nbsp;
-                        <a id="mainmove" href="/MoviePlaza/index.html">홈으로</a>
+                        <!-- 중복확인 결과를 나타내는 스팬 --><!-- 중복확인 결과를 나타내는 스팬 -->
                     </div>
                 </div>
+                <!--비밀번호 확인-->
+                <div class="textForm">
+                    <input type="password" class="pw" name="u_pw" id="upwd1" oninput="chkPwd();"
+                        placeholder="비밀번호를 입력해주세요." required=""> <br><span id="chkPwdMessage"></span>
+                </div>
+                <!--비밀번호 재확인-->
+                <div class="textForm">
+                    <input type="password" class="pw" id="upwd2" oninput="validPW();" placeholder="비밀번호 확인"> <br>
+                    <span id="pwRuleChk"></span>
+                </div>
+                <!--닉네임 중복확인-->
+                <div class="textForm">
+                    <input type="text" name="u_name" id="u_name" oninput="dupCheckNick();" class="id"
+                        placeholder="이름을 입력해주세요." required=""> <br>
+                    <div> <span id="nicknameDupCheckMsg"></span></div>
+                </div>
+                <!--닉네임 중복확인-->
+                <div class="textForm">
+                    <input type="text" name="u_pnone" id="u_phone" oninput="dupCheckNick();" class="id"
+                        placeholder="숫자만 입력해주세요." required=""> <br> <span id="nicknameDupCheckMsg"></span>
+                </div>
+                <br>
 
+                <div class="TandC">
+                    <!-- 전체 동의 -->
+                    <div style="border-bottom: 1px solid gray;">
+                        <span>전체 동의</span>
+                        <input type="checkbox" name="" id="cbx_chkAll">
+                    </div>
+
+                    <!-- 필수 1 -->
+                    <div>
+                        <span><strong>(필수)</strong> 이용약관동의 <button style="margin-top: -3px;" type="button"
+                                onclick="opensoloagree()">상세 보기</button></span>
+                        <input type="checkbox" name="chk" id="">
+                    </div>
+
+                    <!-- 필수 2 -->
+                    <div>
+                        <span><strong>(필수)</strong> 개인정보 수집 및 이용 동의 <button style="margin-top: -3px;" type="button"
+                                onclick="opensoloprivacy()">상세 보기</button></span>
+                        <input type="checkbox" name="chk" id="">
+                    </div>
+
+                    <!-- 선택 1 -->
+                    <div>
+                        <span>(선택) 마케팅 정보 수신 동의 - 이메일 <button type="button"></button></span>
+                        <input type="checkbox" name="chk" id="">
+                    </div>
+
+                    <!-- 선택 2 -->
+                    <div>
+                        <span>(선택) 마케팅 정보 수신 동의 - SMS/MMS <button type="button"></button></span>
+                        <input type="checkbox" name="chk" id="">
+                    </div>
+
+                </div>
+                <div class="sub-btn">
+                    <input class="submit2" type="submit" value="가입하기" id="signupBtn" disabled="">&nbsp;
+                    <a id="mainmove" href="/MoviePlaza/index.html">홈으로</a>
+                </div>
             </div>
 
+        </div>
 
-        </form>
-    </section>
+
+    </form>
+
     <!--/* 개인약관 popup */-->
     <div id="soloagree" class="popLayer">
         <h3>이용약관동의(필수)</h3>

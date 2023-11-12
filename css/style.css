@@ -81,9 +81,6 @@ h6 {
 h1 {
   font-size: 70px;
 }
-.title {
-  text-align: center;
-}
 
 h2 {
   font-size: 36px;
@@ -92,13 +89,6 @@ h2 {
 
 h3 {
   font-size: 30px;
-}
-
-.title {
-  font-size: 30px;
-  margin-top: 30px;
-  text-align: center;
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 .hidden {
@@ -386,7 +376,6 @@ ol {
  -----------------------*/
 
 .header {
-  position: fixed;
   left: 0;
   right: 0;
   z-index: 100;
