@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>WeddingLery</title>
-<meta charset="UTF-8" />
-<meta name="description" content="WeddingLery" />
-<meta name="keywords" content="iframe, html" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- Stylesheets -->
+<html lang="ko">
 
 <head>
+    <title>WeddingLery</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="WeddingLery" />
+    <meta name="keywords" content="iframe, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheets -->
+
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/slicknav.min.css" />
     <link rel="stylesheet" href="css/fresco.css" />
@@ -47,11 +48,51 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/comm.css">
+    <style>
+        /* Style for the popup overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        /* Style for the popup content */
+        .popup-content {
+            position: relative;
+            max-width: 800px;
+            max-height: 80vh;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style to close the popup */
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
 
 </head>
 
 <body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section -->
+
     <header class="header" id="header" style="border-bottom: 1px solid #ccc; padding-bottom: 40px; ">
         <div class="container-fluid">
             <div class="row">
@@ -96,117 +137,436 @@
         </div>
     </header>
 
-    <div class="page-title">
 
-        <div class="back-color">
-            <h3 class="event-title">커뮤니티</h3>
-            <h3 class="event-title2">커뮤니티에서 웨딩의 경험을 공유해보세요.</h3>
-        </div>
-    </div>
+    <section class="pt-12" style="height: 100%;">
 
+        <div class="main-show">
+            <p class="main-show-p">Wedding</span>Lery</p>
+            <strong class="main-show-strong">원하던 웨딩을 실현하는 곳 <span class="sub-show">"웨딩러리"</span> 입니다.</strong>
 
-    <div class="full-color">
-        <section class="pt-5" id="destination">
-            <div class="container">
-                <div class="combtn">
-                    <button class="listdel">삭제</button>
-                    <button class="listbtn">목록</button>
-                    <button class="wrtbtn">글쓰기</button>
-
-                </div>
-                <div class="mb-2 text-left">
-                    <div class="event-list2">
-                        <div class="writetitle">[웨딩러리 오픈기념 경품 추첨 프로모션] 당첨자 발표]</div>
-                        <div class="writer-info">
-                            <div class="writer">윤아곤듀</div>
-                            <div class="writedate">2023.11.02</div>
-                            <div class="writeclick">조회수 : 13</div>
-
-                        </div>
-                        <div class="writecontent">
-
-                            국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다. 국가는 모성의
-                            보호를 위하여 노력하여야 한다.
-
-                            국무총리는 국회의 동의를 얻어 대통령이 임명한다. 국회는 국민의 보통·평등·직접·비밀선거에 의하여 선출된 국회의원으로 구성한다. 이 헌법공포 당시의 국회의원의 임기는
-                            제1항에 의한 국회의 최초의 집회일 전일까지로 한다.
-
-                            대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다. 제안된 헌법개정안은 대통령이 20일 이상의 기간 이를 공고하여야 한다. 명령·규칙 또는 처분이
-                            헌법이나 법률에 위반되는 여부가 재판의 전제가 된 경우에는 대법원은 이를 최종적으로 심사할 권한을 가진다.
-
-                            모든 국민은 통신의 비밀을 침해받지 아니한다. 헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다. 군인·군무원·경찰공무원
-                            기타 법률이 정하는 자가 전투·훈련등 직무집행과 관련하여 받은 손해에 대하여는 법률이 정하는 보상외에 국가 또는 공공단체에 공무원의 직무상 불법행위로 인한 배상은
-                            청구할 수 없다.
-
-                            국회가 재적의원 과반수의 찬성으로 계엄의 해제를 요구한 때에는 대통령은 이를 해제하여야 한다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을
-                            박탈당하지 아니한다.
-
-                            대통령의 국법상 행위는 문서로써 하며, 이 문서에는 국무총리와 관계 국무위원이 부서한다. 군사에 관한 것도 또한 같다. 대통령의 임기는 5년으로 하며, 중임할 수
-                            없다.
-
-                            제2항의 재판관중 3인은 국회에서 선출하는 자를, 3인은 대법원장이 지명하는 자를 임명한다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는 법률이
-                            정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다.
-                        </div>
-
+            <div class="animated-title">
+                <div class="track">
+                    <div class="content">
+                        &nbsp;WeddingLery&nbsp;WeddingLery&nbsp;WeddingLery&nbsp;WeddingLery&nbsp;WeddingLery&nbsp;WeddingLery
                     </div>
-                    <div class="uploadfile-location">
-                        <span class="upload">첨부파일</span>
-                        <div class="upload-files">
-                            <a href="">파일명파일명파일명파일명파</a>
-                        </div>
-                    </div>
-                    <ul class="replysection">
-                        <li class="writereply">댓글 : n개</li>
-                        <li class="replywriter">
-                            <div class="replylocation">
-                                <span>윤아곤듀</span>
-                                <div class="replydate">2023-11-02 21:09:01</div>
-                                <div class="reply-updel">
-                                    <a><button class="replyupdate">수정</button></a>
-                                    <a><button class="replydel">삭제</button></a>
-                                </div>
-                            </div>
-                            <div class="replycontent">
-                                제2항의 재판관중 3인은 국회에서 선출하는 자를, 3인은 대법원장이 지명하는 자를 임명한다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는
-                                법률이
-                                정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다.
-                            </div>
-                        </li>
-                        <li class="replywriter">
-                            <div class="replylocation">
-                                <span>윤아곤듀</span>
-                                <div class="replydate">2023-11-02 21:09:01</div>
-                            </div>
-                            <div class="replycontent">
-                                제2항의 재판관중 3인은 국회에서 선출하는 자를, 3인은 대법원장이 지명하는 자를 임명한다. 정당은 법률이 정하는 바에 의하여 국가의 보호를 받으며, 국가는
-                                법률이
-                                정하는 바에 의하여 정당운영에 필요한 자금을 보조할 수 있다.
-                            </div>
-                        </li>
-
-                        <div class="reply-content">
-                            <div class="reply-article">
-                                <textarea class="reply-textarea" name="" id="" cols="30" rows="10">로그인했을때 : 댓글작성가능 
-비로그인시 멘트내용 : 로그인 후 댓글 작성이 가능합니다 -> 로그인 화면으로 이동
-                                </textarea>
-                                <div class="reply-btn">
-                                    <a href=""><button class="replybtn">등록</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-
-                </div>
-                <div>
-
                 </div>
             </div>
-            <!-- end of .container-->
-        </section>
+        </div>
 
-        <c:import url="/WEB-INF/views/common/footer.jsp" />
-        <c:import url="/WEB-INF/views/common/script.jsp" />
+    </section>
+    <!--오늘의 영상픽 -->
+    <section class="pt-6" id="destination">
 
+        <div class="container">
+            <div class="">
+                <h3 class="main-title">금주의 인기 동영상<span class="main-choice">&nbsp;TOP5!</span></h3>
+                <p class="sub-title">금주의 인기 동영상을 통해 생생한 현장감을 느껴보세요!</p>
+            </div>
+            <div class="choice-all"><a href="#">
+                </a>
+            </div>
+            <div class="row">
+                <div class="swiper mySwiper" style="padding: auto;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/Ih0aguvceY4?si=IeZVvduT-ayKp1iT"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag"> #웨딩미 #전혜빈 #결혼준비</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="popup-overlay" id="videoPopup">
+                                <div class="popup-content">
+                                    <span class="close-popup" onclick="closePopup()">&times;</span>
+                                    <!-- Use the same class for the iframe to target it with JavaScript -->
+                                    <iframe class="video-iframe" width="100%" height="100%" src=""
+                                        title="YouTube video player" frameborder="0" controls="2"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/0Nsy_ixOVRM?si=19jLOitIxKnCjAMV"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag"> #웨딩미 #김진솔 #결혼준비</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/jIqWfZhfCfk?si=mx_W6fh91E7TBBAC"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/JUW0ItM0h9k?si=QIHHzy9vfUSchpyQ"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/u8hsky1cXkc?si=D2o1IZ6Ee9hNRJ85"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 30px;"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination" id="swperpa"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- 여기까지 영상픽 -->
+
+    <!--오늘의 추천픽 -->
+    <section class="pt-6" id="destination">
+        <div class="container">
+            <div class="mb-4 text-left">
+                <h3 class="main-title">이번달&nbsp;인기 동영상<span class="main-choice">&nbsp;TOP5!</span></h3>
+                <p class="sub-title">이번달 인기동영상을 통해 다양한 관심사를 결정 해보세요!</p>
+            </div>
+            <div class="choice-all"><a href="#">
+                </a>
+            </div>
+            <div class="row">
+                <div class="swiper mySwiper" style="padding: auto;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list" onclick="openVideoPopup()">
+                                        <span class="play-button">▶</span>
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/Ih0aguvceY4?si=IeZVvduT-ayKp1iT"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag"> #웨딩미 #전혜빈 #결혼준비</span>
+                                    </div>
+
+                                </div>
+                                <div id="videoPopup" class="popup">
+                                    <span class="close" onclick="closeVideoPopup()">&times;</span>
+                                    <iframe id="videoIframe" width="100%" height="100%" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/0Nsy_ixOVRM?si=19jLOitIxKnCjAMV"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag"> #웨딩미 #김진솔 #결혼준비</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/jIqWfZhfCfk?si=mx_W6fh91E7TBBAC"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/JUW0ItM0h9k?si=QIHHzy9vfUSchpyQ"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video-third">
+                                <div class="video-select">
+                                    <div class="video-list">
+                                        <iframe width="100%" height="100%"
+                                            src="https://www.youtube.com/embed/u8hsky1cXkc?si=D2o1IZ6Ee9hNRJ85"
+                                            title="YouTube video player" frameborder="0" controls="2"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                        <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 30px;"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination" id="swperpa"></div>
+                </div>
+            </div>
+            <!-- 여기까지가 추천픽 -->
+    </section>
+
+    <!-- 카테고리별 추천픽(하드코딩)-->
+    <section class="pt-6" id="destination">
+        <div class="container">
+            <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
+            </div>
+            <div class="mb-2 text-left">
+                <h3 class="main-title">이번달 카테고리 추천픽<span class="main-choice">&nbsp;TOP6!</span></h3>
+                <p class="sub-title">이번달 카테코리 추천을 통해 다양한 스드메를 확인해 보세요!</p>
+            </div>
+            <div class="choice-all"><a href="#">
+                    <span>전체보기</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="row">
+                <div class="category-wrap">
+                    <div class="category-choice active" data-target="studio-tab">
+                        <div class="choice-select">
+                            <div class="text-center">
+                                스튜디오
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-choice" data-target="gyeonggi-tab">
+                        <div class="choice-select">
+                            <div class="text-center">
+                                드레스
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-choice" data-target="busan-tab">
+                        <div class="choice-select ">
+                            <div class="text-center">
+                                메이크업
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- 탭 내용 -->
+                <div class="tab-content">
+                    <div id="studio-tab" class="tab-pane">
+                        <ul class="item-list">
+                            <li class="company-list">
+                                <a href="">
+                                    <img class="company-img" src="img/dest/weddingholl.jpeg" alt="벨라비타">
+                                    <div class="company-info">
+                                        <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
+                                        <span class="company-location">서울 강남구</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="company-list">
+                                <a href="">
+                                    <img class="company-img" src="img/dest/weddingholl2.jpeg" alt="벨라비타">
+                                    <div class="company-info">
+                                        <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
+                                        <span class="company-location">서울 강남구</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="company-list">
+                                <a href="">
+                                    <img class="company-img" src="img/dest/weddingholl3.jpeg" alt="벨라비타">
+                                    <div class="company-info">
+                                        <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
+                                        <span class="company-location">서울 강남구</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="gyeonggi-tab" class="tab-pane">
+                        <ul class="item-list">
+                            <li class="company-list">
+                                <a href="">
+                                    <img class="company-img" src="img/dest/smallwedding.jpeg" alt="벨라비타">
+                                    <div class="company-info">
+                                        <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
+                                        <span class="company-location">서울 강남구</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="company-list">
+                                <a href="">
+                                    <img class="company-img" src="img/dest/smallwedding2.jpeg" alt="벨라비타">
+                                    <div class="company-info">
+                                        <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
+                                        <span class="company-location">서울 강남구</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="company-list">
+                                <a href="">
+                                    <img class="company-img" src="img/dest/smallwedding3.jpeg" alt="벨라비타">
+                                    <div class="company-info">
+                                        <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
+                                        <span class="company-location">서울 강남구</span>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of .container-->
+    </section>
+
+
+
+
+    <div class="footer-section">
+        <div class="footer-section-wrap">
+            <div class="footer-logo">
+                <img src="img/back.jpeg" alt="로고">
+                <div class="footer-content">
+                    <ul>
+                        <li>주소 : 서울특별시 강남구강남구 이런이런이런주소</li>
+                        <li>팩스번호 : 0202020202 &nbsp; 대표전화 : 02020202020</li>
+                        <li>이메일 : test23@naver.com &nbsp;사업자 등록번호 : 020202</li>
+                        <li>사업자 등록번호 : 0202020</li>
+
+                    </ul>
+                    <p class="copyright">Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        WeddingLery All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section end -->
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here....." />
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+    <script>
+        $('.swiper-slide').on('mouseover', function () {
+            swiper.autoplay.stop();
+        });
+        $('.swiper-slide').on('mouseout', function () {
+            swiper.autoplay.start();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!--====== Javascripts & Jquery ======-->
+
+    <script src="js/swiperhoverstop.js"></script>
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <!-- Bootstrap CSS -->
+    <script src="js/tapmenu.js"></script>
+    <script src="js/headercolor.js"></script>
+
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fresco.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        // Function to open the popup and set the video source
+        function openPopup() {
+            var popup = document.getElementById("videoPopup");
+            var videoSource = document.querySelector('.video-iframe').src;
+            var popupVideo = document.querySelector('.popup-content .video-iframe');
+            popupVideo.src = videoSource;
+            popup.style.display = "flex";
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            var popup = document.getElementById("videoPopup");
+            var popupVideo = document.querySelector('.popup-content .video-iframe');
+            // Pause the video when closing the popup
+            popupVideo.src = "";
+            popup.style.display = "none";
+        }
+
+        // Attach the openPopup function to the original video iframe
+        document.querySelector('.video-iframe').addEventListener('click', openPopup);
+    </script>
 </body>
 
 </html>

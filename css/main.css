@@ -71,16 +71,7 @@
   align-items: center;
 }
 
-.video-select {
-  width: 100%;
-  max-width: 900px;
-  margin: 30px auto;
-  border-radius: 30px;
-  background-color: #f0f0f0;
-  padding: 30px;
-  box-sizing: border-box;
-  box-shadow: 0px 8px 33px #c6c4c4;
-}
+
 
 .video-list {
   position: relative;
@@ -173,7 +164,7 @@
 }
 
 .swiper .swiper-wrapper .swiper-slide {
-  margin-right: 0px;
+  margin-right: 5px;
 }
 
 /* 활성 탭 내용 스타일 */
@@ -198,16 +189,16 @@
 @media (max-width: 767px) {
   .main-title {
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .main-title .main-choice {
     color: #b6a368;
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .sub-title {
-    font-size: 15px;
+    font-size: 13px;
     font-family: "Noto Sans KR", sans-serif;
   }
 
@@ -227,14 +218,14 @@
   }
 
   .main-show .main-show-p {
-    font-size: 65px;
+    font-size: 60px;
     color: #000;
     font-weight: 900;
     font-family: "Roboto", sans-serif;
   }
 
   .main-show .main-show-strong {
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
     opacity: 1;
     font-family: "Roboto", sans-serif;
@@ -242,14 +233,15 @@
 
   .main-show .main-show-strong .sub-show {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 28px;
     opacity: 1;
     color: #000;
   }
 
+
   .animated-title {
     color: #adacac;
-    font-size: 65px;
+    font-size: 60px;
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 600;
     position: absolute;
@@ -262,8 +254,17 @@
     overflow-y: hidden;
   }
 
+  .video-select {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 33px #c6c4c4;
+  }
+
   .category-choice.active .choice-select {
-    width: 100px;
+    width: 90px;
     height: 40px;
     background-color: #ff72a1;
     color: #fff;
@@ -278,7 +279,7 @@
   }
 
   .category-choice:not(.active) .choice-select {
-    width: 100px;
+    width: 90px;
     height: 40px;
     color: #000000;
     background-color: #ebebeb;
@@ -297,6 +298,13 @@
     background-size: cover;
     border: 1px solid #ebebeb;
     border-radius: 8px;
+  }
+
+  .company-info .company-name {
+    padding: 16px 0 4px;
+    line-height: 27px;
+    font-size: 15px;
+    font-family: "Noto Sans KR", sans-serif;
   }
 }
 
@@ -366,6 +374,17 @@
     overflow-y: hidden;
   }
 
+  .video-select {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 33px #c6c4c4;
+  }
+
   .category-choice.active .choice-select {
     width: 100px;
     height: 40px;
@@ -401,6 +420,13 @@
     background-size: cover;
     border: 1px solid #ebebeb;
     border-radius: 8px;
+  }
+
+  .company-info .company-name {
+    padding: 16px 0 4px;
+    line-height: 27px;
+    font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif;
   }
 }
 
@@ -470,6 +496,17 @@
     overflow-y: hidden;
   }
 
+  .video-select {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 33px #c6c4c4;
+  }
+
   .category-choice.active .choice-select {
     width: 180px;
     height: 60px;
@@ -505,6 +542,13 @@
     background-size: cover;
     border: 1px solid #ebebeb;
     border-radius: 8px;
+  }
+
+  .company-info .company-name {
+    padding: 16px 0 4px;
+    line-height: 27px;
+    font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif;
   }
 }
 
@@ -574,6 +618,17 @@
     overflow-y: hidden;
   }
 
+  .video-select {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 30px;
+    background-color: #f0f0f0;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 33px #c6c4c4;
+  }
+
   .category-choice.active .choice-select {
     width: 180px;
     height: 60px;
@@ -609,6 +664,13 @@
     background-size: cover;
     border: 1px solid #ebebeb;
     border-radius: 8px;
+  }
+
+  .company-info .company-name {
+    padding: 16px 0 4px;
+    line-height: 27px;
+    font-size: 18px;
+    font-family: "Noto Sans KR", sans-serif;
   }
 }
 

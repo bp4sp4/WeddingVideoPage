@@ -1,6 +1,6 @@
 // Swiper 슬라이더 초기화
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 1,
 
   autoplay: {
     delay: 4000,
