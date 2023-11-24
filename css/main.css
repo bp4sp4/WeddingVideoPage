@@ -190,6 +190,7 @@
   .main-title {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16px;
+    margin-bottom: 5px;
   }
 
   .main-title .main-choice {
@@ -222,10 +223,13 @@
     color: #000;
     font-weight: 900;
     font-family: "Roboto", sans-serif;
+    background: linear-gradient(to bottom, #FFE37F, #000131);
+    color: transparent;
+    -webkit-background-clip: text;
   }
 
   .main-show .main-show-strong {
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
     opacity: 1;
     font-family: "Roboto", sans-serif;
@@ -242,14 +246,14 @@
   .animated-title {
     color: #adacac;
     font-size: 60px;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 600;
     position: absolute;
     width: 100%;
     height: auto;
     opacity: 0.2;
     padding: 300px 0;
-    margin-top: -223px;
+    margin-top: -195px;
     overflow-x: hidden;
     overflow-y: hidden;
   }
@@ -257,10 +261,7 @@
   .video-select {
     width: 100%;
     max-width: 900px;
-    margin: 30px auto;
-    background-color: #f0f0f0;
-    box-sizing: border-box;
-    box-shadow: 0px 8px 33px #c6c4c4;
+
   }
 
   .category-choice.active .choice-select {
@@ -306,6 +307,23 @@
     font-size: 15px;
     font-family: "Noto Sans KR", sans-serif;
   }
+
+  .item-list .company-list>a {
+    display: block;
+  }
+
+  .footer-section .footer-section-wrap {
+    position: relative;
+    padding: 58px 11px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .copyright {
+    font-size: 14px;
+    color: #a1a0a0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -335,6 +353,9 @@
     color: #000;
     font-weight: 900;
     font-family: "Roboto", sans-serif;
+    background: linear-gradient(to bottom, #FFE37F, #000131);
+    color: transparent;
+    -webkit-background-clip: text;
   }
 
   .main-show .main-show-strong {
@@ -362,7 +383,7 @@
   .animated-title {
     color: #adacac;
     font-size: 140px;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 600;
     position: absolute;
     width: 60%;
@@ -428,6 +449,26 @@
     font-size: 18px;
     font-family: "Noto Sans KR", sans-serif;
   }
+
+  .item-list .company-list>a {
+    display: block;
+    padding: 0px 16px 0px 0px;
+    line-height: 1;
+  }
+
+  .footer-section .footer-section-wrap {
+    position: relative;
+    padding: 58px 0;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .copyright {
+    font-size: 15px;
+    color: #a1a0a0;
+  }
+
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -457,6 +498,9 @@
     color: #000;
     font-weight: 900;
     font-family: "Roboto", sans-serif;
+    background: linear-gradient(to bottom, #FFE37F, #000131);
+    color: transparent;
+    -webkit-background-clip: text;
   }
 
   .choice-all>a {
@@ -484,7 +528,7 @@
   .animated-title {
     color: #adacac;
     font-size: 140px;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 600;
     position: absolute;
     width: 60%;
@@ -549,6 +593,25 @@
     line-height: 27px;
     font-size: 18px;
     font-family: "Noto Sans KR", sans-serif;
+  }
+
+  .item-list .company-list>a {
+    display: block;
+    padding: 0px 16px 0px 0px;
+    line-height: 1;
+  }
+
+  .footer-section .footer-section-wrap {
+    position: relative;
+    padding: 58px 0;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .copyright {
+    font-size: 15px;
+    color: #a1a0a0;
   }
 }
 
@@ -587,6 +650,9 @@
     color: #000;
     font-weight: 900;
     font-family: "Roboto", sans-serif;
+    background: linear-gradient(to bottom, #FFE37F, #000131);
+    color: transparent;
+    -webkit-background-clip: text;
   }
 
   .main-show .main-show-strong {
@@ -606,7 +672,7 @@
   .animated-title {
     color: #adacac;
     font-size: 140px;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 600;
     position: absolute;
     width: 60%;
@@ -671,7 +737,28 @@
     line-height: 27px;
     font-size: 18px;
     font-family: "Noto Sans KR", sans-serif;
+
   }
+
+  .item-list .company-list>a {
+    display: block;
+    padding: 0px 16px 0px 0px;
+    line-height: 1;
+  }
+
+  .footer-section .footer-section-wrap {
+    position: relative;
+    padding: 58px 0;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .copyright {
+    font-size: 15px;
+    color: #a1a0a0;
+  }
+
 }
 
 .category-choice:not(.active) .choice-select:hover {
@@ -689,11 +776,7 @@
   margin-bottom: 32px;
 }
 
-.item-list .company-list>a {
-  display: block;
-  padding: 0px 16px 0px 0px;
-  line-height: 1;
-}
+
 
 .company-info {
   overflow: hidden;
@@ -733,6 +816,13 @@
   justify-content: center;
 }
 
+@media only screen and (max-width: 767px) {
+  .footer-section .footer-logo img {
+    display: none;
+  }
+
+}
+
 .footer-section {
   position: relative;
   display: flex;
@@ -743,13 +833,6 @@
   border-top: 1px solid rgb(204, 204, 204);
 }
 
-.footer-section .footer-section-wrap {
-  position: relative;
-  padding: 58px 0;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 .footer-section .footer-section-wrap .footer-content ul {
   list-style-type: none;
@@ -758,9 +841,4 @@
 
 .footer-section .footer-section-wrap .footer-content li {
   margin-bottom: 3px;
-}
-
-.copyright {
-  font-size: 15px;
-  color: #a1a0a0;
 }
