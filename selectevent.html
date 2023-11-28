@@ -50,7 +50,7 @@
     <div class="loader"></div>
   </div>
 
-  <header class="header" id="header">
+  <header class="header" id="header" style="border-bottom: 1px solid #ccc; padding-bottom: 40px; ">
     <div class="container-fluid">
       <div class="row">
 
@@ -62,115 +62,142 @@
           </div>
         </div>
         <div class="col-sm-4 col-md-6 order-1 order-md-2 text-center">
-          <h3 class="main-logo"><span style="color: #ff72a1; ;">웨딩</span>러리</h3>
+          <a href="index.html">
+            <h3 class="main-logo"><img style="width: 150px;" src="img/back.jpeg" alt=로고"></h3>
+          </a>
         </div>
         <div class="col-sm-4 col-md-3 order-3 order-sm-3">
           <div class="header__switches">
             <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+            <a href="#" class="nav-switch"><i class="fa fa-bars"></i></a>
+
+            <!-- 로그인 상태가 아닐 경우 로그인/회원가입 버튼을 보여줍니다. -->
             <a href="login.html" id="header_style">로그인</a>
             <a href="join.html" id="header_style">회원가입</a>
+
+            <!-- 로그인 상태일 경우 로그아웃 버튼을 보여줍니다. -->
+            <a href="#" id="header_style">로그아웃</a>
+
           </div>
         </div>
+
       </div>
       <nav class="main__menu">
-        <ul class="nav__menu" style="padding-bottom: 20px;">
+        <ul class="nav__menu">
           <li><a href="main.do">홈</a></li>
-          <li id="menu__menu"><a href=" event.do">이벤트</a>
-          <div id="subwrapper">
-            <nav id="subnav">
-              <ul id="submenu__list">
-                <li id="submenu__menu"><a href="notice.html">진행중인 이벤트</a></li>
-                <li id="submenu__menu"><a href="lastnotice.html">지난 이벤트</a></li>
-                <li id="submenu__menu"><a href="selectevent.html">당첨자 발표</a></li>
-              </ul>
-            </nav>
-          </div>
-        </li>
-          <li><a href="./video.html">비디오</a></li>
-          <li><a href="#">갤러리</a></li>
-          <li><a href="community.do">커뮤니티</a></li>
+          <li id="menu__menu"><a href="notice.html">이벤트</a>
+            <div id="subwrapper">
+              <nav id="subnav">
+                <ul id="submenu__list">
+                  <li id="submenu__menu"><a href="notice.html">진행중인 이벤트</a></li>
+                  <li id="submenu__menu"><a href="lastnotice.html">지난 이벤트</a></li>
+                  <li id="submenu__menu"><a href="selectevent.html">당첨자 발표</a></li>
+                </ul>
+              </nav>
+            </div>
+          <li><a href="">스드메</a></li>
+          <li><a href="gallery.html">갤러리</a></li>
+          <li><a href="community.html">커뮤니티</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
 
-  <section class="notice">
-    <div class="page-title">
 
-        <div class="back-color">
-          <div class="container" id="title">
-            <a href="">홈</a>>&nbsp;&nbsp;<a href="">이벤트</a>>&nbsp;&nbsp;<a href="">당첨자 발표</a>
-          </div>
-        <h3 class="event-title">당첨자 발표</h3>
+  <div class="page-title">
+
+    <div class="back-color">
+      <div class="container" id="title">
+
       </div>
-      
+      <h3 class="event-title">당첨자 발표</h3>
     </div>
 
-
-      <section class="pt-5" id="destination">
-        <div class="container">
-          <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
-          </div>
-          <div class="mb-2 text-left">
-            
-       
-           
-                <table>
-                    <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>제목</th>
-                        <th>이벤트 기간</th>
-                        <th>발표일</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>4</td>
-                        <td>[웨딩러리 오픈기념 경품 추첨 프로모션] 당첨자 발표</td>
-                        <td>2023.10.13 ~ 2023.10.15</td>
-                        <td>2023.10.16</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>[웨딩러리 오픈기념 경품 추첨 프로모션] 당첨자 발표</td>
-                        <td>2023.10.13 ~ 2023.10.15</td>
-                        <td>2023.10.16</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>[웨딩러리 오픈기념 경품 추첨 프로모션] 당첨자 발표</td>
-                        <td>2023.10.13 ~ 2023.10.15</td>
-                        <td>2023.10.16</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>[웨딩러리 오픈기념 경품 추첨 프로모션] 당첨자 발표</td>
-                        <td>2023.10.13 ~ 2023.10.15</td>
-                        <td>2023.10.16</td>
-                      
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-          </div>
-        </div>
-
-        <!-- end of .container-->
-      </section>
+  </div>
 
 
-    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+  <section class="pt-5" id="destination">
+    <div class="container">
+      <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
+      </div>
+      <div class="mb-2 text-left">
+        <table>
+          <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>이벤트 기간</th>
+              <th>발표일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4</td>
+              <td>[웨딩러리 오픈기념 경품 추첨 프로모션] 당첨자 발표</td>
+              <td>2023.10.13 ~ 2023.10.15</td>
+              <td>2023.10.16</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>[웨딩러리 오픈기념 경품 추첨 프로모션] 당첨자 발표</td>
+              <td>2023.10.13 ~ 2023.10.15</td>
+              <td>2023.10.16</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>[웨딩러리 오픈기념 경품 추첨 프로모션] 당첨자 발표</td>
+              <td>2023.10.13 ~ 2023.10.15</td>
+              <td>2023.10.16</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>[웨딩러리 오픈기념 경품 추첨 프로모션] 당첨자 발표</td>
+              <td>2023.10.13 ~ 2023.10.15</td>
+              <td>2023.10.16</td>
 
-    <script src="js/headercolor.js"></script>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
 
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/fresco.min.js"></script>
-    <script src="js/main.js"></script>
-
+    <!-- end of .container-->
   </section>
+
+  <div class="footer-section">
+    <div class="footer-section-wrap">
+      <div class="footer-logo">
+        <img src="img/back.jpeg" alt="로고">
+        <div class="footer-content">
+          <ul>
+            <li>주소 : 서울특별시 강남구강남구 이런이런이런주소</li>
+            <li>팩스번호 : 0202020202 &nbsp; 대표전화 : 02020202020</li>
+            <li>이메일 : test23@naver.com &nbsp;사업자 등록번호 : 020202</li>
+            <li>사업자 등록번호 : 0202020</li>
+
+          </ul>
+          <p class="copyright">Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            WeddingLery All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor/jquery-3.2.1.min.js"></script>
+
+  <script src="js/headercolor.js"></script>
+
+  <script src="js/jquery.slicknav.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/fresco.min.js"></script>
+  <script src="js/main.js"></script>
+
+
 </body>
 
 </html>

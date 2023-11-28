@@ -6,11 +6,33 @@
  ------------------------------------
  ====================================*/
 
-/*----------------------------------------*/
+/*---------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+#mobileNotification {
+  display: none;
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background: #d5d5d5;
+  color: #333;
+  text-align: center;
+  font-size: 13px;
+  line-height: 30px;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* 화면 너비가 600px 이하인 경우에만 적용되는 스타일 */
+  #mobileNotification {
+    display: block;
+  }
+}
 
 /*  */
 #menu__menu:hover #subwrapper,
@@ -30,7 +52,8 @@
   position: absolute;
   top: 30px;
   right: 130px;
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* 트랜지션 추가 */
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  /* 트랜지션 추가 */
 }
 
 #subnav {
@@ -39,14 +62,19 @@
   margin: 0 auto;
   transition: opacity 0.3s ease;
 }
+
 #submenu__list {
-  display: block; /* 기본 상태를 'block'로 유지 */
+  display: block;
+  /* 기본 상태를 'block'로 유지 */
   transition: opacity 0.3s ease;
   margin-left: -15px;
 }
+
 #menu__menu:hover #submenu__list {
-  opacity: 1; /* 트랜지션을 사용하여 부드럽게 나타나게 함 */
+  opacity: 1;
+  /* 트랜지션을 사용하여 부드럽게 나타나게 함 */
 }
+
 #submenu__menu {
   display: table-cell;
   height: 30px;
@@ -91,6 +119,7 @@ h3 {
   font-size: 30px;
 }
 
+
 .hidden {
   font-size: 25px;
   display: inline-block;
@@ -100,6 +129,7 @@ h3 {
   width: 500px;
   font-family: "Noto Sans KR", sans-serif;
 }
+
 h4 {
   font-size: 24px;
 }
@@ -173,12 +203,14 @@ ol {
     border: 4px solid #f44336;
     border-left-color: transparent;
   }
+
   50% {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     border: 4px solid #673ab7;
     border-left-color: transparent;
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -193,11 +225,13 @@ ol {
     border: 4px solid #f44336;
     border-left-color: transparent;
   }
+
   50% {
     -webkit-transform: rotate(180deg);
     border: 4px solid #673ab7;
     border-left-color: transparent;
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     border: 4px solid #f44336;
@@ -379,9 +413,12 @@ ol {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: transparent; /* Initial background color */
-  color: #fff; /* Initial text color */
-  transition: background-color 0.3s, color 0.3s; /* Add smooth transitions */
+  background-color: transparent;
+  /* Initial background color */
+  color: #fff;
+  /* Initial text color */
+  transition: background-color 0.3s, color 0.3s;
+  /* Add smooth transitions */
 }
 
 @media (max-width: 576px) {
@@ -423,6 +460,7 @@ ol {
 }
 
 @media (max-width: 576px) {
+
   .header__social a.nav-switch,
   .header__switches a.nav-switch {
     display: inline-block;
@@ -457,16 +495,16 @@ ol {
   }
 }
 
-.main__menu .nav__menu > li {
+.main__menu .nav__menu>li {
   display: inline-block;
   position: relative;
 }
 
-.main__menu .nav__menu > li:last-child a {
+.main__menu .nav__menu>li:last-child a {
   margin-right: 0;
 }
 
-.main__menu .nav__menu > li > a {
+.main__menu .nav__menu>li>a {
   position: relative;
   font-size: 16px;
   color: #000000;
@@ -478,12 +516,12 @@ ol {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .main__menu .nav__menu > li > a {
+  .main__menu .nav__menu>li>a {
     margin-right: 20px;
   }
 }
 
-.main__menu .nav__menu > li > a:after {
+.main__menu .nav__menu>li>a:after {
   position: absolute;
   content: "";
   width: 0;
@@ -498,30 +536,30 @@ ol {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.main__menu .nav__menu > li > a.menu--active {
+.main__menu .nav__menu>li>a.menu--active {
   color: #222222;
 }
 
-.main__menu .nav__menu > li > a.menu--active:after {
+.main__menu .nav__menu>li>a.menu--active:after {
   width: 100%;
 }
 
-.main__menu .nav__menu > li:hover a {
+.main__menu .nav__menu>li:hover a {
   color: #222222;
 }
 
-.main__menu .nav__menu > li:hover a:after {
+.main__menu .nav__menu>li:hover a:after {
   width: 100%;
 }
 
-.main__menu .nav__menu > li:hover .sub__menu {
+.main__menu .nav__menu>li:hover .sub__menu {
   top: 100%;
   opacity: 1;
   visibility: visible;
   margin-top: 15px;
 }
 
-.main__menu .nav__menu > li .sub__menu {
+.main__menu .nav__menu>li .sub__menu {
   position: absolute;
   text-align: left;
   padding: 10px 0;
@@ -540,7 +578,7 @@ ol {
   transition: all 0.4s;
 }
 
-.main__menu .nav__menu > li .sub__menu:after {
+.main__menu .nav__menu>li .sub__menu:after {
   position: absolute;
   content: "";
   width: 100%;
@@ -549,11 +587,11 @@ ol {
   top: -25px;
 }
 
-.main__menu .nav__menu > li .sub__menu > li {
+.main__menu .nav__menu>li .sub__menu>li {
   display: block;
 }
 
-.main__menu .nav__menu > li .sub__menu > li > a {
+.main__menu .nav__menu>li .sub__menu>li>a {
   display: block;
   display: block;
   padding: 5px 15px;
@@ -564,11 +602,11 @@ ol {
   font-weight: 700;
 }
 
-.main__menu .nav__menu > li .sub__menu > li > a:hover {
+.main__menu .nav__menu>li .sub__menu>li>a:hover {
   color: #222222;
 }
 
-.main__menu .nav__menu > li .sub__menu > li > a:after {
+.main__menu .nav__menu>li .sub__menu>li>a:after {
   display: none;
 }
 
@@ -845,9 +883,7 @@ ol {
 }
 
 .fr-window-skin-fresco.fr-window-ui-outside .fr-close-background,
-.fr-window-skin-fresco.fr-window-ui-outside
-  .fr-close:hover
-  .fr-close-background {
+.fr-window-skin-fresco.fr-window-ui-outside .fr-close:hover .fr-close-background {
   background-color: transparent;
 }
 
@@ -893,30 +929,24 @@ ol {
   height: 100%;
   left: 0;
   top: 0;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 0)),
-    color-stop(43%, rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 0.49))
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 43%,
-    rgba(0, 0, 0, 0.49) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0) 43%,
-    rgba(0, 0, 0, 0.49) 100%
-  );
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0)),
+      color-stop(43%, rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0.49)));
+  background: -o-linear-gradient(top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 43%,
+      rgba(0, 0, 0, 0.49) 100%);
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 43%,
+      rgba(0, 0, 0, 0.49) 100%);
 }
 
 @media (max-width: 576px),
-  only screen and (min-width: 576px) and (max-width: 767px) {
+only screen and (min-width: 576px) and (max-width: 767px) {
   .blog__item h3 {
     font-size: 22px;
   }
@@ -969,7 +999,7 @@ ol {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
-  (max-width: 576px) {
+(max-width: 576px) {
   .blog__slider .slick-track {
     margin-left: 0;
   }
@@ -1117,7 +1147,7 @@ ol {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
-  (max-width: 576px) {
+(max-width: 576px) {
   .post__share {
     text-align: left;
     padding-top: 35px;

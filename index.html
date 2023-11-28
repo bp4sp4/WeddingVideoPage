@@ -48,8 +48,6 @@
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
 </head>
 
 <body>
@@ -57,7 +55,9 @@
   <div id="preloder">
     <div class="loader"></div>
   </div>
-
+  <div id="mobileNotification">
+    <p>웨딩 영상을 더 편안하게 감상하려면 웹 버전을 이용해보세요.</p>
+  </div>
   <!-- Header Section -->
 
   <header class="header" id="header" style="border-bottom: 1px solid #ccc; padding-bottom: 40px; ">
@@ -72,20 +72,29 @@
           </div>
         </div>
         <div class="col-sm-4 col-md-6 order-1 order-md-2 text-center">
-          <h3 class="main-logo"><img style="width: 150px;" src="img/back.jpeg" alt=""></h3>
+          <a href="index.html">
+            <h3 class="main-logo"><img style="width: 150px;" src="img/back.jpeg" alt=로고"></h3>
+          </a>
         </div>
         <div class="col-sm-4 col-md-3 order-3 order-sm-3">
           <div class="header__switches">
             <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
             <a href="#" class="nav-switch"><i class="fa fa-bars"></i></a>
+
+            <!-- 로그인 상태가 아닐 경우 로그인/회원가입 버튼을 보여줍니다. -->
             <a href="login.html" id="header_style">로그인</a>
             <a href="join.html" id="header_style">회원가입</a>
+
+            <!-- 로그인 상태일 경우 로그아웃 버튼을 보여줍니다. -->
+            <a href="#" id="header_style">로그아웃</a>
+
           </div>
         </div>
+
       </div>
       <nav class="main__menu">
         <ul class="nav__menu">
-          <li><a href=" ./index.html">홈</a></li>
+          <li><a href="main.do">홈</a></li>
           <li id="menu__menu"><a href="notice.html">이벤트</a>
             <div id="subwrapper">
               <nav id="subnav">
@@ -96,9 +105,9 @@
                 </ul>
               </nav>
             </div>
-          <li><a href="./video.html">비디오</a></li>
-          <li><a href="./gallery.html">갤러리</a></li>
-          <li><a href="./blog.html">커뮤니티</a></li>
+          <li><a href="">스드메</a></li>
+          <li><a href="gallery.html">갤러리</a></li>
+          <li><a href="community.html">커뮤니티</a></li>
         </ul>
       </nav>
     </div>
@@ -106,11 +115,9 @@
 
 
   <section class="pt-12" style="height: 100%;">
-
     <div class="main-show">
       <p class="main-show-p">Wedding</span>Lery</p>
       <strong class="main-show-strong">원하던 웨딩을 실현하는 곳 <span class="sub-show">"웨딩러리"</span> 입니다.</strong>
-
       <div class="animated-title">
         <div class="track">
           <div class="content">
@@ -119,15 +126,13 @@
         </div>
       </div>
     </div>
-
   </section>
   <!--오늘의 영상픽 -->
   <section class="pt-6" id="destination">
-
     <div class="container">
       <div class="">
         <h3 class="main-title">금주의 인기 동영상<span class="main-choice">&nbsp;TOP5!</span></h3>
-        <p class="sub-title">금주의 인기 동영상을 통해 생생한 현장감을 느껴보세요!</p>
+        <p class="sub-title">금주의 인기 동영상을 통해 생생한 현장감을 느껴보세요</p>
       </div>
       <div class="choice-all"><a href="#">
         </a>
@@ -144,7 +149,6 @@
                       frameborder="0" controls="2"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
-                    <span class="video-hashtag"> #웨딩미 #전혜빈 #결혼준비</span>
                   </div>
                 </div>
               </div>
@@ -154,11 +158,10 @@
                 <div class="video-select">
                   <div class="video-list">
                     <iframe width="100%" height="100%"
-                      src="https://www.youtube.com/embed/0Nsy_ixOVRM?si=19jLOitIxKnCjAMV" title="YouTube video player"
-                      frameborder="0" controls="2"
+                      src="https://www.youtube.com/embed/-MGr6s0z748?si=al8nbTSljs4-VS3P" title="YouTube video player"
+                      frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
-                    <span class="video-hashtag"> #웨딩미 #김진솔 #결혼준비</span>
                   </div>
                 </div>
               </div>
@@ -168,11 +171,23 @@
                 <div class="video-select">
                   <div class="video-list">
                     <iframe width="100%" height="100%"
-                      src="https://www.youtube.com/embed/jIqWfZhfCfk?si=mx_W6fh91E7TBBAC" title="YouTube video player"
-                      frameborder="0" controls="2"
+                      src="https://www.youtube.com/embed/UACaQSrSsjY?si=ybcZlAJgNVZGbsbx" title="YouTube video player"
+                      frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
-                    <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-third">
+                <div class="video-select">
+                  <div class="video-list">
+                    <iframe width="100%" height="100%	"
+                      src="https://www.youtube.com/embed/GUq15U9p7EE?si=2peCbLKHuBeDKQUI" title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -182,49 +197,30 @@
                 <div class="video-select">
                   <div class="video-list">
                     <iframe width="100%" height="100%"
-                      src="https://www.youtube.com/embed/JUW0ItM0h9k?si=QIHHzy9vfUSchpyQ" title="YouTube video player"
-                      frameborder="0" controls="2"
+                      src="https://www.youtube.com/embed/0Nsy_ixOVRM?si=12rFx2SMOcjLSQJq" title="YouTube video player"
+                      frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
-                    <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="video-third">
-                <div class="video-select">
-                  <div class="video-list">
-                    <iframe width="100%" height="100%"
-                      src="https://www.youtube.com/embed/u8hsky1cXkc?si=D2o1IZ6Ee9hNRJ85" title="YouTube video player"
-                      frameborder="0" controls="2"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
-                    <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div style="margin-bottom: 30px;"></div>
+
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination" id="swperpa"></div>
         </div>
       </div>
     </div>
-
-
-
   </section>
   <!-- 여기까지 영상픽 -->
-
   <!--오늘의 추천픽 -->
   <section class="pt-6" id="destination">
     <div class="container">
       <div class="mb-4 text-left">
-        <h3 class="main-title">이번달&nbsp;인기 동영상<span class="main-choice">&nbsp;TOP5!</span></h3>
-        <p class="sub-title">이번달 인기동영상을 통해 다양한 관심사를 결정 해보세요!</p>
+        <h3 class="main-title">이달&nbsp;인기 동영상<span class="main-choice">&nbsp;TOP5!</span></h3>
+        <p class="sub-title">이달 인기동영상을 통해 다양한 관심사를 결정 해보세요</p>
       </div>
       <div class="choice-all"><a href="#">
         </a>
@@ -236,12 +232,10 @@
               <div class="video-third">
                 <div class="video-select">
                   <div class="video-list">
-                    <iframe width="100%" height="100%"
-                      src="https://www.youtube.com/embed/Ih0aguvceY4?si=IeZVvduT-ayKp1iT" title="YouTube video player"
-                      frameborder="0" controls="2"
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fSMNw03Vb40"
+                      title="몽글몽글.. 레전드 찍은 엔조이커플 빈티지웨딩🩷 #엔조이커플 #쇼츠 #웨딩 #웨딩스냅 #weddingtravel" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
-                    <span class="video-hashtag"> #웨딩미 #전혜빈 #결혼준비</span>
                   </div>
                 </div>
               </div>
@@ -250,12 +244,10 @@
               <div class="video-third">
                 <div class="video-select">
                   <div class="video-list">
-                    <iframe width="100%" height="100%"
-                      src="https://www.youtube.com/embed/0Nsy_ixOVRM?si=19jLOitIxKnCjAMV" title="YouTube video player"
-                      frameborder="0" controls="2"
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2ER5CZhGexU"
+                      title="요즘 웨딩스냅은 이렇게 찍는다📸 제주스냅 vlog🖤 #wedding #sanp #jeju ㅣ아랑" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
-                    <span class="video-hashtag"> #웨딩미 #김진솔 #결혼준비</span>
                   </div>
                 </div>
               </div>
@@ -264,12 +256,23 @@
               <div class="video-third">
                 <div class="video-select">
                   <div class="video-list">
-                    <iframe width="100%" height="100%"
-                      src="https://www.youtube.com/embed/jIqWfZhfCfk?si=mx_W6fh91E7TBBAC" title="YouTube video player"
-                      frameborder="0" controls="2"
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vxwP6M7_htc"
+                      title="🌊제주 웨딩 스냅 장소 추천과 🍯팁 ! #제주웨딩스냅 ✔️장소 추천과 촬영 팁 짧게 정리해봤어요 💞#웨딩스냅" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
-                    <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="video-third">
+                <div class="video-select">
+                  <div class="video-list"><iframe width="451" height="802"
+                      src="https://www.youtube.com/embed/EUAwDxcyyeA" title="올림픽공원 웨딩스냅 with 아멜리아가든 연우작가"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -278,32 +281,16 @@
               <div class="video-third">
                 <div class="video-select">
                   <div class="video-list">
-                    <iframe width="100%" height="100%"
-                      src="https://www.youtube.com/embed/JUW0ItM0h9k?si=QIHHzy9vfUSchpyQ" title="YouTube video player"
-                      frameborder="0" controls="2"
+                    <iframe width="451" height="802" src="https://www.youtube.com/embed/dmchrm9exsA"
+                      title="제주웨딩스냅의 환상적인 결과물" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen></iframe>
-                    <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="video-third">
-                <div class="video-select">
-                  <div class="video-list">
-                    <iframe width="100%" height="100%"
-                      src="https://www.youtube.com/embed/u8hsky1cXkc?si=D2o1IZ6Ee9hNRJ85" title="YouTube video player"
-                      frameborder="0" controls="2"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
-                    <span class="video-hashtag">#웨딩 #결혼식준비 #결혼준비</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div style="margin-bottom: 30px;"></div>
+
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination" id="swperpa"></div>
@@ -318,8 +305,8 @@
       <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4">
       </div>
       <div class="mb-2 text-left">
-        <h3 class="main-title">이번달 카테고리 추천픽<span class="main-choice">&nbsp;TOP6!</span></h3>
-        <p class="sub-title">이번달 카테코리 추천을 통해 다양한 스드메를 확인해 보세요!</p>
+        <h3 class="main-title">이달 카테고리 추천픽<span class="main-choice">&nbsp;TOP5!</span></h3>
+        <p class="sub-title">이달 카테코리 추천을 통해 다양한 스드메를 확인해 보세요</p>
       </div>
       <div class="choice-all"><a href="#">
           <span>전체보기</span>
@@ -339,95 +326,240 @@
               </div>
             </div>
           </div>
-          <div class="category-choice" data-target="gyeonggi-tab">
+          <div class="category-choice" data-target="dress-tab">
             <div class="choice-select">
               <div class="text-center">
                 드레스
               </div>
             </div>
           </div>
-          <div class="category-choice" data-target="busan-tab">
+          <div class="category-choice" data-target="makeup-tab">
             <div class="choice-select ">
               <div class="text-center">
                 메이크업
               </div>
             </div>
           </div>
-
-
         </div>
         <!-- 탭 내용 -->
-        <div class="tab-content">
-          <div id="studio-tab" class="tab-pane">
-            <ul class="item-list">
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="img/dest/weddingholl.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
-                  </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="img/dest/weddingholl2.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
 
+        <div id="studio-tab" class="tab-pane">
+          <div class="swiper mySwiper" style="padding: auto;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yphCA3Q8DsI"
+                        title="웨딩촬영 스튜디오 실제 세트장과 수정본의 갭차이🙊 (메이트언니들의 웨딩꿀팁)" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
                   </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="img/dest/weddingholl3.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="451" height="802" src="https://www.youtube.com/embed/CPDOgH_EroE"
+                        title="요즘 많이 찾아주시는 웨딩 수중촬영 | 물빛색스튜디오" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VDSGLcPf_tM"
+                        title="토탈웨딩스튜디오 중 가장 배경 이쁜 곳" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
                   </div>
-                </a>
-              </li>
-            </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="00%" height="100%" src="https://www.youtube.com/embed/Zgs7m9KTehQ"
+                        title="대구웨딩스튜디오 비엔 촬영 스케치" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vOgZeezPi2Y"
+                        title="강남웨딩홀 소노펠리체컨벤션 야외 웨딩촬영이 돋보이는 스튜디오 추천리스트" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-bottom: 30px;"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination" id="swperpa"></div>
           </div>
-          <div id="gyeonggi-tab" class="tab-pane">
-            <ul class="item-list">
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="img/dest/smallwedding.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
+        </div>
 
+        <div id="dress-tab" class="tab-pane">
+          <div class="swiper mySwiper" style="padding: auto;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yphCA3Q8DsI"
+                        title="웨딩촬영 스튜디오 실제 세트장과 수정본의 갭차이🙊 (메이트언니들의 웨딩꿀팁)" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
                   </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="img/dest/smallwedding2.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션2 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="451" height="802" src="https://www.youtube.com/embed/CPDOgH_EroE"
+                        title="요즘 많이 찾아주시는 웨딩 수중촬영 | 물빛색스튜디오" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VDSGLcPf_tM"
+                        title="토탈웨딩스튜디오 중 가장 배경 이쁜 곳" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
                   </div>
-                </a>
-              </li>
-              <li class="company-list">
-                <a href="">
-                  <img class="company-img" src="img/dest/smallwedding3.jpeg" alt="벨라비타">
-                  <div class="company-info">
-                    <h2 class="company-name">벨라비타컨벤션3 - 강남구</h2>
-                    <span class="company-location">서울 강남구</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="00%" height="100%" src="https://www.youtube.com/embed/Zgs7m9KTehQ"
+                        title="대구웨딩스튜디오 비엔 촬영 스케치" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vOgZeezPi2Y"
+                        title="강남웨딩홀 소노펠리체컨벤션 야외 웨딩촬영이 돋보이는 스튜디오 추천리스트" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-bottom: 30px;"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination" id="swperpa"></div>
+          </div>
+        </div>
+        <div id="makeup-tab" class="tab-pane">
+          <div class="swiper mySwiper" style="padding: auto;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yphCA3Q8DsI"
+                        title="웨딩촬영 스튜디오 실제 세트장과 수정본의 갭차이🙊 (메이트언니들의 웨딩꿀팁)" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="451" height="802" src="https://www.youtube.com/embed/CPDOgH_EroE"
+                        title="요즘 많이 찾아주시는 웨딩 수중촬영 | 물빛색스튜디오" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VDSGLcPf_tM"
+                        title="토탈웨딩스튜디오 중 가장 배경 이쁜 곳" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
                   </div>
-                </a>
-              </li>
-            </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="00%" height="100%" src="https://www.youtube.com/embed/Zgs7m9KTehQ"
+                        title="대구웨딩스튜디오 비엔 촬영 스케치" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video-third">
+                  <div class="video-select">
+                    <div class="video-list">
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vOgZeezPi2Y"
+                        title="강남웨딩홀 소노펠리체컨벤션 야외 웨딩촬영이 돋보이는 스튜디오 추천리스트" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-bottom: 30px;"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination" id="swperpa"></div>
           </div>
         </div>
       </div>
     </div>
+
 
     <!-- end of .container-->
   </section>

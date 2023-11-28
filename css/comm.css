@@ -5,15 +5,31 @@
 a {
   color: #5e6282;
 }
+
 a:hover {
   color: #5e6282;
 }
+
 ul {
   list-style: none;
 }
+
+input::placeholder {
+  color: #ccc;
+}
+
+input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+input:-ms-input-placeholder {
+  color: #ccc;
+}
+
 .page-title {
   margin-bottom: 60px;
 }
+
 .back-color {
   width: 100%;
   background-color: #c3acd0;
@@ -72,22 +88,20 @@ ul {
   font-size: 18px;
   margin-bottom: 10px;
 }
-/* 글 리스트 목록 */
+
+/* 湲� 由ъ뒪�듃 紐⑸줉 */
 .event-list {
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
-  padding-top: 50px;
-  padding-bottom: 50px;
+
   margin-bottom: 50px;
 }
 
 .event-list2 {
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   padding-bottom: 50px;
 }
 
-/* 글상세 목록 */
+/* 湲��긽�꽭 紐⑸줉 */
 .event-list2 .writer-info {
   display: flex;
   justify-content: space-between;
@@ -106,6 +120,7 @@ ul {
   background: #f8f8f8;
   border-bottom: 1px solid #ccc;
 }
+
 .event-list2 .writecontent {
   margin-top: 40px;
   margin-left: 27px;
@@ -129,9 +144,7 @@ ul {
   text-align: right;
 }
 
-/* 여기까지 *?
-
-/* 댓글 디자인 목록 */
+/* �뙎湲� �뵒�옄�씤 紐⑸줉 */
 .replysection {
   width: 100%;
 }
@@ -145,9 +158,9 @@ ul {
 
 .replysection .replywriter {
   float: left;
-  margin-top: 10px;
-  margin-left: 27px;
+  margin: 20px 0 20px 27px;
 }
+
 .replysection .replydate {
   font-size: 16px;
 }
@@ -155,25 +168,38 @@ ul {
 .replylocation {
   display: flex;
 }
-.replylocation > span {
+
+.replylocation>span {
   font-weight: bold;
   font-size: 16px;
   margin-right: 10px;
 }
+
 .replylocation .replydate {
   font-size: 12px;
   line-height: 28px;
 }
+
+.replycontent {
+  margin: 0px;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  margin: 10px 0 10px 0;
+}
+
 .reply-updel {
   position: absolute;
   right: 19px;
 }
+
 .replyupdate {
   border-radius: 5px;
   background: #f8f8f8;
   border: 1px solid #ccc;
   color: #000000;
 }
+
 .replydel {
   border-radius: 5px;
   background: #f8f8f8;
@@ -181,19 +207,12 @@ ul {
   color: #000000;
 }
 
-.replycontent {
-  margin: 0px;
+.reply-content {
+
   width: 100%;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-  margin: 10px 0 10px 0;
+
 }
 
-.reply-content {
-  margin-top: 40px;
-  width: 100%;
-  height: 205px;
-}
 .reply-content .reply-article {
   height: 178px;
   display: flex;
@@ -201,6 +220,7 @@ ul {
   border: 1px solid #ddd;
   flex-direction: column;
 }
+
 .reply-content .reply-article .reply-textarea {
   margin: 10px;
   padding: 20px;
@@ -208,6 +228,7 @@ ul {
   border: none;
   resize: none;
 }
+
 .reply-btn .replybtn {
   width: 65px;
   height: 40px;
@@ -218,9 +239,30 @@ ul {
   margin-right: 10px;
   float: right;
 }
-/* 여기까지 */
 
-/*  테이블   */
+.uploadfile-location {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+.uploadfile-location .upload {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.uploadfile-location .upload-files {
+  display: block;
+  width: 150px;
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* */
 table {
   font-size: 0.9em;
 
@@ -259,6 +301,7 @@ td {
 }
 
 @media all and (max-width: 768px) {
+
   table,
   thead,
   tbody,
@@ -305,15 +348,14 @@ td {
   }
 }
 
-/* 테이블 여기까지 */
-
-/* 글쓰기 목록 버튼 */
+/* */
 .combtn {
   display: flex;
   justify-content: right;
   align-items: center;
   margin-bottom: 20px;
 }
+
 
 .combtn .listdel {
   width: 65px;
@@ -324,6 +366,7 @@ td {
   border-radius: 5px;
   margin-right: 10px;
 }
+
 .combtn .listbtn {
   width: 65px;
   height: 40px;
@@ -343,40 +386,25 @@ td {
   height: 40px;
 }
 
-.uploadfile-location {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  margin: 10px 0 10px 0;
-}
-.uploadfile-location .upload {
-  font-size: 20px;
-  padding: 10px;
-}
-.uploadfile-location .upload-files {
-  display: block;
-  width: 150px;
-  height: 50px;
-  overflow: hidden;
-  border: 1px solid #ddd;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-/* 여기까지 */
-
-/* 페이지 네이션 */
 .page_wrap {
   text-align: center;
   font-size: 0;
   margin-bottom: 30px;
 }
+
 .page_nation {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .page_nation .none {
   display: none;
 }
+
 .page_nation a {
   display: block;
   margin: 0 5px;
@@ -384,35 +412,45 @@ td {
   border: 1px solid #e6e6e6;
   width: 32px;
   height: 32px;
-  line-height: 32px;
+  line-height: 28px;
   text-align: center;
   background-color: #fff;
   font-size: 13px;
   color: #999999;
   text-decoration: none;
 }
+
 .page_nation .arrow {
   border: 1px solid #ccc;
 }
+
 .page_nation .pprev {
   background: #f8f8f8 url("/img/page_pprev.png") no-repeat center center;
   margin-left: 0;
 }
+
 .page_nation .prev {
   background: #f8f8f8 url("/img/page_prev.png") no-repeat center center;
   margin-right: 7px;
 }
+
 .page_nation .next {
   background: #f8f8f8 url("/img/page_next.png") no-repeat center center;
   margin-left: 7px;
 }
+
 .page_nation .nnext {
   background: #f8f8f8 url("/img/page_nnext.png") no-repeat center center;
   margin-right: 0;
 }
+
 .page_nation a.active {
   background-color: #42454c;
   color: #fff;
   border: 1px solid #42454c;
 }
-/* 페이지네이션 끝 */
+
+.notable {
+  font-size: 25px;
+  margin-top: 35px;
+}
