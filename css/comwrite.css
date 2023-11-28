@@ -241,7 +241,7 @@ a:hover {
   resize: none;
   outline: 0 none;
   line-height: 40px;
-  overflow: scroll;
+  overflow: hidden;
   letter-spacing: -0.4px;
 }
 
