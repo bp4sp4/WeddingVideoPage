@@ -53,13 +53,7 @@
 
 <body>
 
-    <script>
 
-        function sendData(f) {
-            f.action = "/insertStudentInfoForm.do";
-            f.submit();
-        }
-    </script>
 
     <body>
         <header class="header" id="header" style="border-bottom: 1px solid #ccc; padding-bottom: 40px; ">
@@ -141,42 +135,7 @@
 
         <!-- Summernote 기능 유지 -->
 
-        <script type="text/javascript">
-            var $j = jQuery.noConflict();
-
-            $j(document).ready(function () {
-                $j('#editorTxt').summernote({
-                    lang: 'ko-KR',
-                    height: 650,
-                    focus: true,
-                    callbacks: {
-                        onImageUpload: function (files, editor) {
-                            for (var i = 0; i < files.length; i++) {
-                                sendImage(files[i], editor);
-                            }
-                        }
-                    }
-                });
-            });
-
-            function sendImage(file, editor) {
-                var frm = new FormData();
-                frm.append("s_file", file);
-                $j.ajax({
-                    url: "/saveImage.do",
-                    data: frm,
-                    type: "post",
-                    contentType: false,
-                    processData: false,
-                    dataType: "json",
-                }).done(function (data) {
-                    var path = data.path;
-                    var fname = data.fname;
-                    alert("path : " + path + "\nfname : " + fname);
-                    $j("#editorTxt").summernote("editor.insertImage", path + "/" + fname);
-                });
-            }
-        </script>
+        >
         <div class="footer-section">
             <div class="footer-section-wrap">
                 <div class="footer-logo">
