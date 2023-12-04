@@ -1,9 +1,9 @@
-# 23/10/25 생성 ~ 11월 중반까지 디자인 추후 계속 업데이트 예정
+# 23/10/25 생성 ~ 11월말까지 디자인 추후 계속 업데이트 예정
 
 ## 데모사이트이기 때문에 디자인이 불안정해 보일수 있음 전체적인 디자인 figma 생성 예정
 
-웨딩러리 데모사이트 - <a  target="_blank" href="https://bp4sp4.github.io/WeddingVideoPage" >홈페이지</a> <br>
-
+WeddingLery Demo - <a  target="_blank" href="https://bp4sp4.github.io/WeddingVideoPage" >WeddingLery</a> <br>
+WeddingLery All Figma - <a href="https://www.figma.com/file/ShCgLKcrh1RjeZv4DnSUYb/%EC%9B%A8%EB%94%A9%EB%9F%AC%EB%A6%AC?type=design&node-id=206%3A216&mode=design&t=FdM5xlLM6nrDN5ts-1">Figma</a>
 # 23/ 11/28
 
 # 23/ 11/28
