@@ -4,7 +4,20 @@
 
 WeddingLery Demo - <a  target="_blank" href="https://bp4sp4.github.io/WeddingVideoPage" >WeddingLery</a> <br>
 WeddingLery All Figma - <a href="https://www.figma.com/file/ShCgLKcrh1RjeZv4DnSUYb/%EC%9B%A8%EB%94%A9%EB%9F%AC%EB%A6%AC?type=design&node-id=206%3A216&mode=design&t=FdM5xlLM6nrDN5ts-1">Figma</a>
-# 23/ 11/28
+
+# 23/ 12/4
+
+<h3>메인 카테고리 추천픽</h3>
+
+<h3>To do List</h3>
+[ ] 불필요한 css 코드 삭제하기<br>
+[ ] 마이페이지 - 비밀번호 재설정용도 아니면 다른 추가기능
+<br><br>
+
+1. 메인 카테고리 추천픽(웹O, 태블릿O , 모바일 O)
+   - 네이밍 교체 before : 이달 카테고리 추천픽 TOP5! -> after : 이달 카테고리 추천픽 TOP6!
+   - 스드메에 만들었던 json 데이터 무한스크롤 삭제하고 최대한 이미지만 있는 데이터 띄우기 6개
+   - 동영상에서 이미지로 체인지했기에 css 수정
 
 # 23/ 11/28
 
