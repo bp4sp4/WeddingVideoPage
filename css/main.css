@@ -235,20 +235,6 @@
     cursor: pointer;
   }
 
-  .company-img {
-    width: 111px;
-    height: 130px;
-    background-size: cover;
-    border: 1px solid #ebebeb;
-    border-radius: 8px;
-  }
-
-  .company-info .company-name {
-    padding: 16px 0 4px;
-    line-height: 27px;
-    font-size: 15px;
-    font-family: "Noto Sans KR", sans-serif;
-  }
 
   .item-list .company-list>a {
     display: block;
@@ -266,6 +252,79 @@
     font-size: 14px;
     color: #a1a0a0;
   }
+
+  #myList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .company {
+    color: black;
+    font-size: 14px;
+  }
+
+  #myList2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList2 li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList2 li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  #myList3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList3 li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList3 li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -376,26 +435,6 @@
     cursor: pointer;
   }
 
-  .company-img {
-    width: 380px;
-    height: 200px;
-    background-size: cover;
-    border: 1px solid #ebebeb;
-    border-radius: 8px;
-  }
-
-  .company-info .company-name {
-    padding: 16px 0 4px;
-    line-height: 27px;
-    font-size: 18px;
-    font-family: "Noto Sans KR", sans-serif;
-  }
-
-  .item-list .company-list>a {
-    display: block;
-    padding: 0px 16px 0px 0px;
-    line-height: 1;
-  }
 
   .footer-section .footer-section-wrap {
     position: relative;
@@ -410,6 +449,76 @@
     color: #a1a0a0;
   }
 
+  #myList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .company {
+    color: black;
+    font-size: 14px;
+  }
+
+  #myList2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList2 li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList2 li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  #myList3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList3 li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList3 li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -520,25 +629,75 @@
     cursor: pointer;
   }
 
-  .company-img {
-    width: 380px;
-    height: 200px;
-    background-size: cover;
-    border: 1px solid #ebebeb;
-    border-radius: 8px;
+  #myList {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .company-info .company-name {
-    padding: 16px 0 4px;
-    line-height: 27px;
-    font-size: 18px;
-    font-family: "Noto Sans KR", sans-serif;
+  #myList li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
   }
 
-  .item-list .company-list>a {
-    display: block;
-    padding: 0px 16px 0px 0px;
-    line-height: 1;
+  #myList li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .company {
+    color: black;
+    font-size: 14px;
+  }
+
+  #myList2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList2 li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList2 li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  #myList3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList3 li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList3 li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
   }
 
   .footer-section .footer-section-wrap {
@@ -663,22 +822,6 @@
     cursor: pointer;
   }
 
-  .company-img {
-    width: 380px;
-    height: 280px;
-    background-size: cover;
-    border: 1px solid #ebebeb;
-    border-radius: 8px;
-  }
-
-  .company-info .company-name {
-    padding: 16px 0 4px;
-    line-height: 27px;
-    font-size: 18px;
-    font-family: "Noto Sans KR", sans-serif;
-
-  }
-
   .item-list .company-list>a {
     display: block;
     padding: 0px 16px 0px 0px;
@@ -698,6 +841,78 @@
     color: #a1a0a0;
   }
 
+  #myList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .company {
+    color: black;
+    font-size: 14px;
+  }
+
+  #myList2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList2 li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList2 li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  #myList3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myList3 li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+  }
+
+  #myList3 li .wedding {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+
 }
 
 .category-choice:not(.active) .choice-select:hover {
@@ -714,8 +929,6 @@
   width: 33.33%;
   margin-bottom: 32px;
 }
-
-
 
 .company-info {
   overflow: hidden;

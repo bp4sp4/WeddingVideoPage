@@ -41,6 +41,12 @@
   opacity: 1;
 }
 
+#menu__menu:hover #subwrapper2,
+#subwrapper2:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
 #menu__menu:hover #submenu__list {
   display: block;
 }
@@ -52,6 +58,17 @@
   position: absolute;
   top: 30px;
   right: 130px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  /* 트랜지션 추가 */
+}
+
+#subwrapper2 {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  top: 30px;
+  right: 58px;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   /* 트랜지션 추가 */
 }

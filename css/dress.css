@@ -1,0 +1,29 @@
+* {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+#myList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#myList li {
+    flex: 1 1 30%;
+    margin: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-align: center;
+
+
+}
+
+#myList li .wedding {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.company {
+    color: black;
+}
