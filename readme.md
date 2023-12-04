@@ -5,7 +5,7 @@
 WeddingLery Demo - <a  target="_blank" href="https://bp4sp4.github.io/WeddingVideoPage" >WeddingLery</a> <br>
 WeddingLery All Figma - <a href="https://www.figma.com/file/ShCgLKcrh1RjeZv4DnSUYb/%EC%9B%A8%EB%94%A9%EB%9F%AC%EB%A6%AC?type=design&node-id=206%3A216&mode=design&t=FdM5xlLM6nrDN5ts-1">Figma</a>
 
-# 23/ 12/4
+# 23/12/4(월)
 
 <h3>메인 카테고리 추천픽</h3>
 
@@ -19,7 +19,7 @@ WeddingLery All Figma - <a href="https://www.figma.com/file/ShCgLKcrh1RjeZv4DnSU
    - 스드메에 만들었던 json 데이터 무한스크롤 삭제하고 최대한 이미지만 있는 데이터 띄우기 6개
    - 동영상에서 이미지로 체인지했기에 css 수정
 
-# 23/ 11/28
+# 23/11/28(화)
 
 <h3>메인, 이벤트, 스드메, 갤러리, 커뮤니티</h3>
 
@@ -42,14 +42,14 @@ WeddingLery All Figma - <a href="https://www.figma.com/file/ShCgLKcrh1RjeZv4DnSU
 5. 스드메
    - 미구현 -> 무한스크롤 기능 완성되는 대로 디자인 할 예정
 
-# 23/ 11/24
+# 23/ 11/24(금)
 
 <h3>메인, 로그인, 회원가입</h3>
 - 메인 반응형(웹, 태블릿, 모바일) 적용 완료 <br>
 - 로그인, 회원가입(웹, 태블릿, 모바일) 적용 완료 <br>
 - 개발환경에선 이벤트 스드메 커뮤니티 디자인완료 데모버전은 아직 디자인 적용 안함
 
-# 23/10/27
+# 23/10/27(금)
 
 <h3>웨딩러리 - 로그인, 회원가입 </h3>
 - 회원가입 로그인폼 -디자인 완 <br>
@@ -69,7 +69,7 @@ WeddingLery All Figma - <a href="https://www.figma.com/file/ShCgLKcrh1RjeZv4DnSU
 
 <h3>비디오 갤러리 커뮤니티 - 기능정의 정해져야함</h3>
 
-# 23/ 10/25
+# 23/10/25(수)
 
 <h3>웨딩러리 - 퍼블리싱 </h3>
 
