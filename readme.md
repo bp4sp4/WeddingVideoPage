@@ -11,7 +11,7 @@ WeddingLery All Figma - <a href="https://www.figma.com/file/ShCgLKcrh1RjeZv4DnSU
 
 <h3>To do List</h3>
 [ ] 불필요한 css 코드 삭제하기<br>
-[ ] 마이페이지 - 비밀번호 재설정용도 아니면 다른 추가기능
+
 <br><br>
 
 1. 메인 카테고리 추천픽(웹O, 태블릿O , 모바일 O)
