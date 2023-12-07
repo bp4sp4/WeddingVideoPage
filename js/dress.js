@@ -18,10 +18,10 @@
 
   let currentIndex = 0;
   const itemsPerLoad = 12;
-  const defaultImageUrl = "img/default.png";
+  const defaultImageUrl = "../img/default.png";
 
   function displayMoreItems() {
-    fetch("json/dress.json")
+    fetch("../json/dress.json")
       .then((response) => response.json())
       .then((data) => {
         const itemsWithImages = shuffleArray(
