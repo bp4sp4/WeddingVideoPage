@@ -1313,3 +1313,17 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   resize: none;
   margin-bottom: 50px;
 }
+
+.btn_gotop {
+  display: none;
+  /* Hide the button by default */
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  z-index: 999;
+  outline: none;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 100%;
+}
