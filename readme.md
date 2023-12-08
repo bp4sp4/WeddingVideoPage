@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/fontawesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white">
   <br>
 </div>
-(마우스 우클릭 통해 새창으로 열어봐주시면 편하게 보실수 있습니다.)
+(마우스 우클릭 통해 새창으로 열어 봐주시면 편하게 보실수 있습니다.)
 WeddingLery Demo - <a target="_blank" href="https://bp4sp4.github.io/WeddingVideoPage" >WeddingLery</a> <br>
 WeddingLery All Figma - <a target="_blank" href="https://www.figma.com/file/ShCgLKcrh1RjeZv4DnSUYb/%EC%9B%A8%EB%94%A9%EB%9F%AC%EB%A6%AC?type=design&node-id=206%3A216&mode=design&t=FdM5xlLM6nrDN5ts-1">Figma</a>
 
