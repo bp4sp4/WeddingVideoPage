@@ -1,5 +1,7 @@
 ## WeddingLery - 퍼블리싱 완료
 
+## 작업환경 : macOS, 작업툴 : VSCode, STS
+
 ## 작업기간 - 23/11/01 ~ 23/12/06 - 1개월
 
 <div align=center><h1>📚 STACKS</h1></div>
