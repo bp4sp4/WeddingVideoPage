@@ -2,6 +2,10 @@ ul {
   list-style: none;
 }
 
+a:hover {
+  color: #b6a368;
+}
+
 .page-title {
   margin-bottom: 60px;
 }
@@ -16,7 +20,7 @@ ul {
 
 .total-content {
   font-size: 13px;
-  color: #FF72A1;
+  color: #ff0046;
 }
 
 .event-title {
@@ -150,7 +154,8 @@ ul {
 }
 
 .event-list .event-list-ul .item .pormotion .red {
-  background-color: red;
+  background-color: #b6a368;
+  color: #fff;
 }
 
 .event-list .event-list-ul .item .tit {
