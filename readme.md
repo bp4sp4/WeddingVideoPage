@@ -102,6 +102,7 @@ li {
 
 <h3> #스드메 </h3>
 
+- <a href="https://github.com/bp4sp4/WeddingVideoPage/blob/main/python/main.py">크롤링한 코드</a>
 - IntersectionObserver Observer API를 통해 무한스크롤 구현과 새로고침할떄마다 랜덤으로 이미지와, 이미지없는것들은 default 이미지처리를 진행했다.
 - 데이터는 파이썬으로 크롤링한 경험이 있기에 웨딩북 사이트에서 이미지를 크롤링 해왔다. 파이썬에서 css 선택자에서 굉장히 인식을 못해 애를 먹었다.
 - 크롤링한 데이터를 json파일로 만들어 자바스크립트로 json을 웹에 뿌려주는 형식으로 진행했다.
